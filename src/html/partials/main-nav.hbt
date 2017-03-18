@@ -1,0 +1,13 @@
+<nav class="global--main-nav container">
+    <div class="global--main-nav-left">
+        <img src="/img/logo/logo-white.svg">
+    </div>
+    <div class="global--main-nav-right">
+        <a href="#" class="global--main-nav-item">About</a>
+        <a href="#" class="global--main-nav-item">Schedule</a>
+        <a href="#" class="global--main-nav-item">Events</a>
+        <a href="#" class="global--main-nav-item">Rates</a>
+        <a href="#" class="global--main-nav-item">Our Team</a>
+        <a href="#" class="global--main-nav-item">Contact</a>
+    </div>
+</nav>

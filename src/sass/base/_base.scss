@@ -52,3 +52,17 @@ section > * {
 .container {
     padding: 0 calc(50% - 480px);
 }
+
+.section-spacing {
+  margin-top: 5.5em;
+  margin-bottom: 5.5em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.row-full {
+  margin: 0;
+}

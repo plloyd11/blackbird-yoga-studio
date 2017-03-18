@@ -5,6 +5,8 @@
 
 <body>
 
+  {{> main-nav }}
+
   {{{ contents }}}
 
   {{> scripts }}

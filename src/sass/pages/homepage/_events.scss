@@ -1,0 +1,25 @@
+.homepage--events {
+    position: relative;
+    margin-top: 13em;
+
+    &-info {
+        position: absolute;
+        top: -120px;
+        left: 8%;
+        width: 85%;
+        margin: 0 auto;
+        background: #F1EFE9;
+    }
+
+    &-item {
+        display: flex;
+
+        &-date {
+            flex: 1 100px;
+        }
+
+        &-desc {
+            flex: 2 500px;
+        }
+    }
+}
