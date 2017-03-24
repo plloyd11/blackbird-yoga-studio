@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 
     &-left {
         > img {
@@ -17,4 +18,8 @@
         padding-right: 0.5em;
         color: #fff;
     }
+}
+
+.headroom--not-top {
+    background-color: $bg-dark-gray;
 }

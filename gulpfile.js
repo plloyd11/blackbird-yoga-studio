@@ -1,31 +1,47 @@
-/*jshint esversion: 6 */
-/* jshint node: true */
-
 'use strict';
-
-// FIXME Add image asset pipeline
-
+const babel = require('gulp-babel');
+const babelify = require('babelify');
 const browserify = require('browserify');
-const bs = require('browser-sync').create();
 const buffer = require('vinyl-buffer');
+const bs = require('browser-sync').create();
+const concat = require('gulp-concat');
 const copy = require('gulp-copy');
+const del = require('del');
+const gif = require('imagemin-gifsicle');
 const gulp = require('gulp');
 const gutil = require('gulp-util');
-const metalsmith = require('./bin/metalsmith');
+const imagemin = require('gulp-imagemin');
+const jpg = require('imagemin-jpegoptim');
+const maps = require('gulp-sourcemaps');
+const metalsmith = require('./metalsmith');
+const png = require('imagemin-optipng');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const source = require('vinyl-source-stream');
+const svg = require('imagemin-svgo');
+const uglify = require('gulp-uglify');
 
+// CSS pipeline
 gulp.task('css', () => {
   return gulp.src('./src/sass/main.scss')
-    .pipe(sass({
-      sourceMapEmbed: true,
-      outputStyle: 'compressed'
-    }).on('error', sass.logError))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./src/css'));
+  .pipe(maps.init())
+  .pipe(sass({
+    outputStyle: 'compressed',
+    includePaths: [
+      './src/sass/base/*',
+      './src/sass/components/*',
+      './src/sass/layout/*',
+      './src/sass/pages/*',
+      './src/sass/utilities/*',
+    ]
+  }).on('error', sass.logError))
+  .pipe(rename({suffix: '.min'}))
+  .pipe(maps.write('./'))
+  .pipe(gulp.dest('./src/css'));
 });
 
+// JavaScript pipeline
+// embed source map into doc via json data url using '{ debug: true }'
 gulp.task('javascript', () => {
   return browserify('./src/js/main.js', { debug: true })
     .transform('babelify', { presets: ['es2015'] })
@@ -33,35 +49,99 @@ gulp.task('javascript', () => {
     .bundle()
     .pipe(source('main.min.js'))
     .pipe(buffer())
+    .pipe(maps.write('./'))
     .pipe(gulp.dest('./src/js'));
 });
 
+// TODO run this on production builds only
+// TODO 'jpeg' is a local dependency
+gulp.task('image', () => {
+  gulp.src(['./src/img/**/*'])
+    .pipe(imagemin([
+      jpg({ max: 50 }),
+      png({ optimizationLevel: 3 }),
+      gif({ optimizationLevel: 3 }),
+      svg({
+        minifyStyles: true,
+        removeDoctype: true
+      })
+    ]))
+    .pipe(gulp.dest('./build/img'));
+});
+
+
+// Gulp depencencies copy
+gulp.task('copy', () => {
+  return gulp.src([
+    './node_modules/jquery/dist/jquery.min.js',
+    './node_modules/jquery-ui-dist/jquery-ui.min.js'
+  ])
+  .pipe(copy('./src/js/libraries', { prefix: 3 }));
+});
+
+// Metalsmith build task
 gulp.task('build', (done) => {
-  metalsmith((err, success) => {
-    if (err) {
-      return gutil.log(err);
+  metalsmith((error) => {
+    if (error) {
+      gutil.log(error);
     } else {
-      bs.reload();
       done();
     }
   });
 });
 
-gulp.task('default', ['build'], () => {
+// Build task, turns on BS server if not already on
+gulp.task('build-helper', ['build'], (done) => {
+  const bsFlag = (() => {
+    let status = false;
+    return (bool) => {
+      if (bool) status = true;
+      return status;
+    };
+  })();
+  gulp.src(['./build/pages/**/*'])
+  .pipe(gulp.dest('build'))
+  .on('end', () => del([
+    './build/pages/',
+    './build/templates/'
+  ])
+  .then(() => {
+    if (!bsFlag()) {
+      bs.init({
+        server: { baseDir: './build' },
+        notify: false
+      }, () => {
+        bsFlag(true);
+        done();
+      });
+    }
+    if (bsFlag()) return bs.reload();
+  }));
+});
+
+// Standalone server
+gulp.task('serve', (done) => {
   bs.init({
     server: { baseDir: './build' },
-    notify: false,
-    ghostMode: true,
-    serveStatic: ['./build'],
-    serveStaticOptions: { extensions: ['html'] }
-  });
+    notify: false
+  }, () => done());
+});
+
+// Default task and watch tasks
+gulp.task('default', ['build-helper'], () => {
+  // Watch Sass
   gulp.watch(['src/sass/**/*'], ['css']);
+  // Watch JavaScript
   gulp.watch(['src/js/main.js', 'src/js/lib/**/*.js'], ['javascript']);
+  // Watch for Handlebars and/or HTML, build site
   gulp.watch([
-    'src/css/**/*',
-    'src/html/**/*',
-    'src/img/**/*',
-    'src/js/vendor/**/*',
-    'src/js/main.min.js',
-  ], ['build']);
+    'src/**/*.{html, hbt, txt}',
+    'src/templates/**/*.{hbt, html}',
+    'src/css/**/*.{css, map}',
+    'src/js/*.js',
+    '!src/js/main.js',
+    '!src/js/lib/**/*.js',
+    'src/js/vendor/**/*js',
+    'src/img/**/*'
+  ], ['build-helper']);
 });

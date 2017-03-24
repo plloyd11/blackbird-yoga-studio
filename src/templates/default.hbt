@@ -5,13 +5,13 @@
 
 <body>
 
-  {{> main-nav }}
+  {{> global-nav }}
 
   {{{ contents }}}
 
   {{> scripts }}
 
-  {{> footer }}
+  {{> global-footer }}
 
 </body>
 
