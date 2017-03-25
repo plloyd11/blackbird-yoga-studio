@@ -15,6 +15,7 @@ body {
     font-weight: 300;
     line-height: 1.33333rem;
 }
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -49,13 +50,18 @@ section > * {
     margin-right: 0.66667em;
 }
 
-.container {
+.container,
+.wrapper {
     padding: 0 calc(50% - 480px);
 }
 
 .section-spacing {
   margin-top: 5.5em;
   margin-bottom: 5.5em;
+}
+
+.header-spacing {
+  margin-bottom: 2.5em;
 }
 
 img {

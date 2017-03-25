@@ -1,11 +1,28 @@
 .homepage--intro {
-  display: flex;
-  align-items: center;
+    display: flex;
+
     &-text {
-        flex: 1;
+        flex: 2;
+
+        > h2 {
+            font-size: 2rem;
+            line-height: 1.25;
+        }
+
+        > p {
+            font-size: 1.15rem;
+            line-height: 1.25;
+        }
     }
 
     &-schedule {
+        padding: 0 1em;
         flex: 1;
+        border: 1px solid #dedede;
+        background: #F8F8F8;
+
+        .info_wrapper {
+            font-size: 1rem;
+        }
     }
 }

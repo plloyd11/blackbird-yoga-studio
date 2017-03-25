@@ -1,0 +1,5 @@
+.schedule {
+    &--hero {
+        @include hero-img(url('/img/schedule-hero.jpg'));
+    }
+}

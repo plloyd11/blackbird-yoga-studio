@@ -1,0 +1,13 @@
+.contact {
+    &--hero {
+        @include hero-img(url('/img/contact-hero.jpg'));
+    }
+
+    &--content {
+        display: flex;
+
+        > div {
+            flex: 1;
+        }
+    }
+}

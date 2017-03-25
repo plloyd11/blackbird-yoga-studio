@@ -1,6 +1,6 @@
 <header class="global--main-nav container animated">
     <div class="global--main-nav-left">
-        <img src="/img/logo/logo-white.svg">
+        <a href="/"><img src="/img/logo/logo-white.svg"></a>
     </div>
     <nav class="global--main-nav-right">
         <a href="/about/" class="global--main-nav-item">About</a>

@@ -6,20 +6,35 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: 0.35s ease-in;
 
     &-left {
-        > img {
+        img {
             width: 175px;
         }
     }
 
     &-item {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
         color: #fff;
+        text-transform: uppercase;
+        font-size: 0.95rem;
+
+        &:hover {
+            color: #adadad;
+            text-decoration: none;
+        }
     }
 }
 
 .headroom--not-top {
+    height: 75px;
     background-color: $bg-dark-gray;
+    transition: 0.35s ease-in;
+
+    img {
+        margin-top: 5px;
+        width: 100px;
+    }
 }

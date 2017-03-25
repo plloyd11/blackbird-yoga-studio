@@ -1,8 +1,21 @@
 // Basic typography style for copy text
+
 body {
-  font-family: $text-font-stack;
+    font-family: $text-font-stack;
 }
 
-p, a, li, h1, h2, h3, h4, h5 {
-  font-family: $text-font-stack;
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+p {
+    margin: 0;
+    font-family: $text-font-stack;
+}
+
+p {
+  line-height: 1.25;
 }
