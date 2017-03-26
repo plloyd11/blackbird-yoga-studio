@@ -19,6 +19,14 @@
 }
 
 .btn-ghost {
-  background: inherit;
-  border: 1px solid #fff;
+    background: inherit;
+    border: 1px solid #fff;
+}
+
+.btn-submit {
+    padding: 0 3em;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
 }

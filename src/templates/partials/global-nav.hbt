@@ -3,11 +3,11 @@
         <a href="/"><img src="/img/logo/logo-white.svg"></a>
     </div>
     <nav class="global--main-nav-right">
-        <a href="/about/" class="global--main-nav-item">About</a>
-        <a href="/schedule/" class="global--main-nav-item">Schedule</a>
-        <a href="/events/" class="global--main-nav-item">Events</a>
-        <a href="/rates/" class="global--main-nav-item">Rates</a>
-        <a href="/our-team/" class="global--main-nav-item">Our Team</a>
-        <a href="/contact/" class="global--main-nav-item">Contact</a>
+        <a href="/about/" class="global--main-nav-item animsition-link">About</a>
+        <a href="/schedule/" class="global--main-nav-item animsition-link">Schedule</a>
+        <a href="/events/" class="global--main-nav-item animsition-link">Events</a>
+        <a href="/rates/" class="global--main-nav-item animsition-link">Rates</a>
+        <a href="/our-team/" class="global--main-nav-item animsition-link">Our Team</a>
+        <a href="/contact/" class="global--main-nav-item animsition-link">Contact</a>
     </nav>
 </header>

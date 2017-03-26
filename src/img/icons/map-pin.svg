@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="47px" height="61px" viewBox="0 0 47 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>map-pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="map-pin" fill-rule="nonzero" fill="#9DA890">
+            <g id="Group">
+                <path d="M23.2,0.1 C10.5,0.1 0.3,10.4 0.3,23 C0.3,35.6 23.2,60.1 23.2,60.1 C23.2,60.1 46.1,35.7 46.1,23 C46.1,10.3 35.9,0.1 23.2,0.1 Z M23.2,57.1 C21.1,54.8 17.2,50.3 13.3,45 C6.1,35.3 2.3,27.7 2.3,22.9 C2.3,11.4 11.7,2 23.2,2 C34.7,2 44.1,11.5 44.1,23 C44.1,27.7 40.3,35.4 33.1,45.1 C29.2,50.3 25.3,54.8 23.2,57.1 Z" id="Shape"></path>
+                <path d="M23.2,11.1 C17.2,11.1 12.4,15.9 12.4,21.9 C12.4,27.9 17.2,32.7 23.2,32.7 C29.2,32.7 34,27.9 34,21.9 C34,16 29.2,11.1 23.2,11.1 Z M29.4,28.2 C27.8,29.8 25.6,30.8 23.2,30.8 C20.8,30.8 18.6,29.8 17,28.2 C15.4,26.6 14.4,24.4 14.4,22 C14.4,19.6 15.4,17.4 17,15.8 C18.6,14.2 20.8,13.2 23.2,13.2 C25.6,13.2 27.8,14.2 29.4,15.8 C31,17.4 32,19.6 32,22 C32,24.4 31,26.6 29.4,28.2 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

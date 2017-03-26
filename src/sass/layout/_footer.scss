@@ -4,12 +4,13 @@
     background-color: $bg-dark-gray;
 
     &-wrapper {
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
         display: flex;
         justify-content: space-between;
+
         > div {
-          flex: 1;
+            flex: 1;
         }
     }
 
@@ -23,14 +24,20 @@
     &-social {
         a {
             > img {
-                width: 175px;
-                margin-bottom: 0.35em;
+                width: 125px;
+                margin: 0 auto 0.35em;
             }
         }
 
         &-icons {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+
+            > img {
+                width: 30px;
+                margin-left: 0.25em;
+                margin-right: 0.25em;
+            }
         }
     }
 }

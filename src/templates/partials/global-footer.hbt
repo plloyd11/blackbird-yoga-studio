@@ -33,7 +33,7 @@
                             <input data-id="url:input" type="hidden" name="url" value="">
                             <p data-id="Email Address:p"><input data-id="Email Address:input" type="text" name="email" value="" maxlength="80" placeholder="Please enter your email address"></p>
                             <p data-id="First Name:p"><input data-id="First Name:input" type="text" name="first_name" value="" maxlength="50" placeholder="What's your name?"></p>
-                            <button type="submit" class="btn btn-cta" data-enabled="enabled">Sign Up</button>
+                            <button type="submit" class="btn btn-submit" data-enabled="enabled">Sign Up</button>
                         </form>
                     </div>
                 </div>

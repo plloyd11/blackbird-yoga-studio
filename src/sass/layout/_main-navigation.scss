@@ -10,8 +10,15 @@
 
     &-left {
         img {
-            width: 175px;
+            width: 155px;
         }
+    }
+
+    &-right {
+      display: none;
+      @include mq (medium) {
+        display: block;
+      }
     }
 
     &-item {
@@ -34,7 +41,10 @@
     transition: 0.35s ease-in;
 
     img {
-        margin-top: 5px;
+        margin-top: 7px;
         width: 100px;
+    }
+    .global--main-nav-item {
+      font-size: .75rem;
     }
 }

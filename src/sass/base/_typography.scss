@@ -1,6 +1,7 @@
 // Basic typography style for copy text
 
-body {
+body,
+.ctct-custom-form {
     font-family: $text-font-stack;
 }
 
@@ -14,6 +15,7 @@ li,
 p {
     margin: 0;
     font-family: $text-font-stack;
+    margin-bottom: 1em;
 }
 
 p {
