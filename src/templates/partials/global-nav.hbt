@@ -1,6 +1,6 @@
 <header class="global--main-nav container animated">
     <div class="global--main-nav-left">
-        <a href="/"><img src="/img/logo/logo-white.svg"></a>
+        <a href="/"><img src="/img/logo/logo-black.svg"></a>
     </div>
     <nav class="global--main-nav-right">
         <a href="/about/" class="global--main-nav-item animsition-link">About</a>
@@ -8,6 +8,6 @@
         <a href="/events/" class="global--main-nav-item animsition-link">Events</a>
         <a href="/rates/" class="global--main-nav-item animsition-link">Rates</a>
         <a href="/our-team/" class="global--main-nav-item animsition-link">Our Team</a>
-        <a href="/contact/" class="global--main-nav-item animsition-link">Contact</a>
+        <a href="/contact/" class="global--main-nav-item nav-cta animsition-link">Contact</a>
     </nav>
 </header>

@@ -1,0 +1,63 @@
+.about {
+    &--hero {
+        @include hero-img(url('/img/about-hero.jpg'));
+    }
+
+    &--callout {
+        width: 100%;
+        height: 65vh;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        p {
+            position: relative;
+            color: #fff;
+            font-size: 1.15rem;
+            line-height: 1.25;
+            text-align: center;
+            z-index: 10;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: hsla(186, 63%, 67%,.7);
+        }
+    }
+
+    &--cta {
+        margin-top: 5em;
+        display: flex;
+        justify-content: space-around;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            > h3 {
+                margin-top: 1em;
+            }
+        }
+    }
+}
+
+.callout-1 {
+    background-image: url('/img/callout-1.jpg');
+}
+
+.callout-2 {
+    background-image: url('/img/callout-2.jpg');
+}

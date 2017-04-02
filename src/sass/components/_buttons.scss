@@ -1,5 +1,5 @@
 .btn {
-    background: $primary-green;
+    background: $primary-color;
     color: #ffffff;
     display: inline-block;
     font-size: 15px;
@@ -13,7 +13,7 @@
 
     &:hover {
         color: #fff;
-        background: darken($primary-green, 15%);
+        background: darken($primary-color, 15%);
         text-decoration: none;
     }
 }
@@ -29,4 +29,18 @@
     font-size: 1rem;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.nav-cta {
+    background: $primary-color;
+    padding: 0.5em 1em;
+    color: white;
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.49, 0.99, 0.54, 0.98);
+
+    &:hover {
+        color: #fff;
+        background: darken($primary-color, 15%);
+        text-decoration: none;
+    }
 }

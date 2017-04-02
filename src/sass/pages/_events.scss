@@ -1,0 +1,5 @@
+.events {
+    &--hero {
+        @include hero-img(url('/img/events-hero.jpg'));
+    }
+}

@@ -1,0 +1,5 @@
+.rates {
+    &--hero {
+        @include hero-img(url('/img/rates-hero.jpg'));
+    }
+}
