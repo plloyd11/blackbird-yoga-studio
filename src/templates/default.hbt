@@ -9,9 +9,9 @@
 
   {{{ contents }}}
 
-  {{> scripts }}
-
   {{> global-footer }}
+
+  {{> scripts }}
 
 </body>
 
