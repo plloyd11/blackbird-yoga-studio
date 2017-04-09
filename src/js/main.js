@@ -36,3 +36,15 @@ $(document).ready(function() {
         }
     });
 });
+
+(function($) {
+  (function() {
+      $('.team--individual-img').on('mouseenter', '.team-image', function() {
+          var teamName = $(this).data('name');
+          $(this).attr('src', '/img/team/' + teamName + '-fun.jpg');
+      }).on('mouseleave', '.team-image', function() {
+          var teamName = $(this).data('name');
+          $(this).attr('src', '/img/team/' + teamName + '.jpg');
+      });
+  }());
+}(jQuery));
