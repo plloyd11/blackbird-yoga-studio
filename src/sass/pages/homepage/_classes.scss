@@ -32,7 +32,7 @@
                 }
 
                 &:nth-child(2) {
-                    @include classes-bg(url('/img/classes/basic.jpg') no-repeat center center);
+                    @include classes-bg(url('/img/classes/basic-class.jpg') no-repeat center center);
                 }
 
                 &:nth-child(3) {
