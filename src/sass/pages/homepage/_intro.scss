@@ -1,24 +1,38 @@
 .homepage--intro {
     display: flex;
+    flex-direction: column;
+    @include mq (small) {
+        flex-direction: row;
+    }
 
     &-text {
         flex: 2;
 
         > h2 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             line-height: 1.25;
+            @include mq (small) {
+                font-size: 2rem;
+            }
         }
 
         > p {
-            font-size: 1.15rem;
+            font-size: 1rem;
             line-height: 1.25;
+            @include mq (small) {
+                font-size: 1.15rem;
+            }
         }
     }
 
     &-schedule {
+        margin-top: 1em;
         padding: 0 1em;
         flex: 1;
         border: 1px solid #dedede;
+        @include mq (small) {
+            margin-top: 0;
+        }
 
         .info_wrapper {
             font-size: 1rem;

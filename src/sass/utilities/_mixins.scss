@@ -35,7 +35,7 @@
 // hero mixins
 @mixin hero-img($bg) {
     width: 100%;
-    height: 85vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,12 +44,19 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @include mq (small) {
+      height: 85vh;
+    }
 
-    > h1 {
+    h1 {
         margin: 0;
-        font-size: 3rem;
+        font-size: 1.75rem;
         font-weight: 300;
         color: #fff;
+        line-height: 1;
+        @include mq (small) {
+          font-size: 3rem;
+        }
     }
 }
 

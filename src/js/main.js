@@ -37,14 +37,20 @@ $(document).ready(function() {
     });
 });
 
+// Team hover 
 (function($) {
-  (function() {
-      $('.team--individual-img').on('mouseenter', '.team-image', function() {
-          var teamName = $(this).data('name');
-          $(this).attr('src', '/img/team/' + teamName + '-fun.jpg');
-      }).on('mouseleave', '.team-image', function() {
-          var teamName = $(this).data('name');
-          $(this).attr('src', '/img/team/' + teamName + '.jpg');
-      });
-  }());
+    (function() {
+        $('.team--individual-img').on('mouseenter', '.team-image', function() {
+            var teamName = $(this).data('name');
+            $(this).attr('src', '/img/team/' + teamName + '-fun.jpg');
+        }).on('mouseleave', '.team-image', function() {
+            var teamName = $(this).data('name');
+            $(this).attr('src', '/img/team/' + teamName + '.jpg');
+        });
+    }());
 }(jQuery));
+
+// Mobile Menu
+$('.nav-cta').on('click', function() {
+    $('.global--main-nav-right').toggleClass('mobile-menu-open');
+});

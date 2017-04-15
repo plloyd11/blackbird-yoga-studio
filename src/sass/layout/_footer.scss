@@ -7,7 +7,11 @@
         padding-top: 5%;
         padding-bottom: 5%;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        @include mq (small) {
+            flex-direction: row;
+        }
 
         > div {
             flex: 1;
@@ -15,13 +19,37 @@
     }
 
     &-address {
+        order: 2;
+        @include mq (small) {
+            order: 1;
+        }
+
         > p {
             margin: 0;
             line-height: 1.5;
+            text-align: center;
+            @include mq (small) {
+                text-align: left;
+            }
+        }
+
+        > small {
+            display: block;
+            text-align: center;
+            @include mq (small) {
+                text-align: left;
+            }
         }
     }
 
     &-social {
+        margin-top: 1.25em;
+        order: 1;
+        @include mq (small) {
+            margin-top: 0;
+            order: 2;
+        }
+
         a {
             > img {
                 width: 125px;
@@ -30,14 +58,29 @@
         }
 
         &-icons {
+          margin-top: 1.25em;
             display: flex;
             justify-content: center;
+            @include mq (small) {
+              margin-top: 0; 
+
+            }
 
             > img {
                 width: 30px;
                 margin-left: 0.25em;
                 margin-right: 0.25em;
             }
+        }
+    }
+
+    &-subscribe {
+    margin-top: 1.25em;
+        order: 3;
+        text-align: center;
+        @include mq (small) {
+          margin-top: 0; 
+        text-align: left;
         }
     }
 }

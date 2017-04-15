@@ -8,6 +8,10 @@
         <a href="/events/" class="global--main-nav-item animsition-link">Events</a>
         <a href="/rates/" class="global--main-nav-item animsition-link">Rates</a>
         <a href="/our-team/" class="global--main-nav-item animsition-link">Our Team</a>
+        <a href="/getting-started/" class="global--main-nav-item animsition-link">Getting Started</a>
         <a href="/contact/" class="global--main-nav-item nav-cta animsition-link">Contact</a>
+    </nav>
+    <nav class="global--main-nav-mobile">
+      <button class="nav-cta">Menu</button>
     </nav>
 </header>

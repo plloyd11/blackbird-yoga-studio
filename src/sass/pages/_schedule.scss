@@ -1,8 +1,4 @@
 .schedule {
-    &--hero {
-        @include hero-img(url('/img/schedule-hero.jpg'));
-    }
-
     div.healcode .group_by_class_type {
         display: none !important;
     }

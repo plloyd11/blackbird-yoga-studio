@@ -1,15 +1,20 @@
 .homepage--events {
     position: relative;
-    margin-top: 13em;
+    margin-top: 3em;
+    @include mq (small) {
+        margin-top: 13em;
+    }
 
     &-info {
-        position: absolute;
-        top: -120px;
-        left: 8%;
         width: 85%;
         margin: 0 auto;
         background: #fff;
         border-radius: 6px;
+        @include mq (small) {
+            position: absolute;
+            top: -120px;
+            left: 8%;
+        }
     }
 
     &-item {
@@ -21,6 +26,13 @@
 
         &-desc {
             flex: 2 500px;
+        }
+    }
+
+    img {
+        display: none;
+        @include mq (small) {
+            display: block;
         }
     }
 }

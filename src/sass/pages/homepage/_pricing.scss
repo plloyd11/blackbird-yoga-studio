@@ -1,13 +1,17 @@
 .homepage--pricing {
     &-wrapper {
         display: flex;
+        flex-direction: column;
+        @include mq (small) {
+            flex-direction: row;
+        }
     }
 
     &-item {
         max-width: 500px;
         height: 500px;
-        margin-left: .5em;
-        margin-right: .5em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
         padding-left: 1em;
         padding-right: 1em;
         flex: 1;
@@ -46,8 +50,9 @@
 
         > div {
             margin-top: 2em;
+
             > p {
-              margin-bottom: 0;
+                margin-bottom: 0;
             }
         }
     }
