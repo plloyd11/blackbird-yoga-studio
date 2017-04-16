@@ -51,22 +51,21 @@
         }
 
         a {
-            > img {
+            img {
                 width: 125px;
                 margin: 0 auto 0.35em;
             }
         }
 
         &-icons {
-          margin-top: 1.25em;
+            margin-top: 1.25em;
             display: flex;
             justify-content: center;
             @include mq (small) {
-              margin-top: 0; 
-
+                margin-top: 0;
             }
 
-            > img {
+            .social-icon {
                 width: 30px;
                 margin-left: 0.25em;
                 margin-right: 0.25em;
@@ -75,12 +74,12 @@
     }
 
     &-subscribe {
-    margin-top: 1.25em;
+        margin-top: 1.25em;
         order: 3;
         text-align: center;
         @include mq (small) {
-          margin-top: 0; 
-        text-align: left;
+            margin-top: 0;
+            text-align: left;
         }
     }
 }

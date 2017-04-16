@@ -28,13 +28,19 @@
 
     &--pricing {
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
+        @include mq (small) {
+            flex-direction: row;
+        }
 
         &-item {
-            margin-left: 0.5em;
-            margin-right: 0.5em;
+            margin: 1em 0.5em;
             flex: 1;
             text-align: center;
+            @include mq (small) {
+                margin: 0 0.5em;
+            }
 
             &-top {
                 padding: 1em 2.25em;

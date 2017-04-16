@@ -55,5 +55,11 @@
                 margin-bottom: 0;
             }
         }
+        &-single {
+          > p {
+            padding: 0 4em;
+            line-height: 1.7;
+          }
+        }
     }
 }

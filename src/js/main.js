@@ -37,7 +37,7 @@ $(document).ready(function() {
     });
 });
 
-// Team hover 
+// Team hover
 (function($) {
     (function() {
         $('.team--individual-img').on('mouseenter', '.team-image', function() {
@@ -51,6 +51,6 @@ $(document).ready(function() {
 }(jQuery));
 
 // Mobile Menu
-$('.nav-cta').on('click', function() {
+$('.mobile-menu-btn').on('click', function() {
     $('.global--main-nav-right').toggleClass('mobile-menu-open');
 });

@@ -10,15 +10,13 @@
             <div class="global--footer-social">
                 <a href="/"><img src="/img/logo/logo-white.svg"></a>
                 <div class="global--footer-social-icons">
-                    <img src="/img/logo/fb.svg">
-                    <img src="/img/logo/twitter.svg">
-                    <img src="/img/logo/ig.svg">
+                    <a href="https://www.facebook.com/blackbirdyogahaworth/" target="_blank"><img src="/img/logo/fb.svg" class="social-icon"></a>
+                    <a href="https://twitter.com/@blackbirdyoga" target="_blank"><img src="/img/logo/twitter.svg" class="social-icon"></a>
+                    <a href="https://www.instagram.com/blackbird_yoga_studio/" target="_blank"><img src="/img/logo/ig.svg" class="social-icon"></a>
                 </div>
             </div>
             <div class="global--footer-subscribe">
                 <h3>Subscribe to our newsletter</h3>
-                <!--Begin CTCT Sign-Up Form-->
-                <!-- EFD 1.0.0 [Sat Mar 25 11:48:38 EDT 2017] -->
                 <link rel='stylesheet' type='text/css' href='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/css/signup-form.css'>
                 <div class="footer-signup">
                     <div>
