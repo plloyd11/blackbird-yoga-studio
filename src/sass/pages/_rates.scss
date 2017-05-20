@@ -36,7 +36,7 @@
 
         &-item {
             margin: 1em 0.5em;
-            flex: 1;
+            flex: 1 300px;
             text-align: center;
             @include mq (small) {
                 margin: 0 0.5em;
