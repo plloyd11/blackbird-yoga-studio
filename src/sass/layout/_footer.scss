@@ -30,6 +30,7 @@
       text-align: center;
       @include mq (small) {
         text-align: left;
+        font-size: 18px;
       }
     }
 
@@ -48,6 +49,9 @@
     @include mq (small) {
       margin-top: 0;
       margin-right: 2.25em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
       order: 2;
     }
 
@@ -67,7 +71,7 @@
       }
 
       .social-icon {
-        width: 35px;
+        width: 40px;
         margin-left: 0.25em;
         margin-right: 0.25em;
       }
