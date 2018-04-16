@@ -9,12 +9,19 @@ html {
 
 body {
     height: 100%;
-    margin: 0;
+    max-width: 1680px;
+    margin: 0 auto;
     color: #333e48;
+    background-color: #dfe3e8;
     -webkit-text-size-adjust: none;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.33333rem;
+}
+
+main {
+    background-color: #fff;
+    padding-bottom: 1em;
 }
 
 .content-page {

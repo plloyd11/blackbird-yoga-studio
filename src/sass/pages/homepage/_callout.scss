@@ -7,20 +7,20 @@
     background: url('/img/studio-meditating-mobile.jpg') no-repeat center center;
     background-size: cover;
     @include mq (small) {
-        height: 500px;
+        height: 700px;
         background: url('/img/studio-meditating.jpg') no-repeat center center;
         background-size: cover;
     }
 
     .text-wrapper {
         color: #fff;
-        text-align: right;
+        text-align: left;
 
         > p {
             font-size: 1rem;
             line-height: 1;
             @include mq (small) {
-                padding-left: 16.5em;
+                padding-right: 16.5em;
                 font-size: 1.15rem;
                 line-height: 1.35;
             }
