@@ -22,7 +22,8 @@
             @include mq (small) {
                 padding-right: 16.5em;
                 font-size: 1.15rem;
-                line-height: 1.35;
+                line-height: 1.5;
+                font-weight: 400;
             }
         }
     }

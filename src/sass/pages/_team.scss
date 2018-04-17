@@ -3,9 +3,16 @@
         @include hero-img(url('/img/team-hero.jpg'));
     }
 
+    &--intro {
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+
     &--callout {
         width: 100%;
-        height: 350px;
+        height: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
