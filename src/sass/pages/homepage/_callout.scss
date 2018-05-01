@@ -1,6 +1,6 @@
 .homepage--callout {
     width: 100%;
-    height: 300px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@
 
         > p {
             font-size: 1rem;
-            line-height: 1;
+            line-height: 1.25;
             @include mq (small) {
                 padding-right: 16.5em;
                 font-size: 1.15rem;
