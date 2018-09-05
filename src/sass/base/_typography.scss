@@ -1,5 +1,4 @@
 // Basic typography style for copy text
-
 body,
 .ctct-custom-form {
     font-family: $text-font-stack;
@@ -19,5 +18,6 @@ p {
 }
 
 p {
-  line-height: 1.25;
+    font-size: 1.15rem;
+    line-height: 1.5;
 }

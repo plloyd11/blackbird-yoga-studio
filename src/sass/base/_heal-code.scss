@@ -28,8 +28,16 @@ div.list_view li.odd {
   font-weight: 300;
   line-height: 1.35;
   color: #333E47;
+  div {
+    font-size: 1.15rem;
+    line-height: 1.5;
+  }
 }
 
 .ctct-custom-form {
   padding: 15px 15px 15px 0 !important;
+}
+
+div.healcode div.hc_footer * {
+  width: 1px;
 }
