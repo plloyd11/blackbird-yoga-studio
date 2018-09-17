@@ -4,6 +4,7 @@
 @import
   'utilities/variables',
   'utilities/functions',
+  'utilities/helper-classes',
   'utilities/media-queries',
   'utilities/responsive-embed',
   'utilities/mixins';
@@ -23,11 +24,13 @@
 // 4. Layout-related sections
 @import
   'layout/main-navigation',
+  'layout/layouts',
   'layout/footer';
 
 // 5. Components
 @import
   'components/buttons',
+  'components/pricing-card',
   'components/ui-patterns';
 
 // 6. Page-specific styles
@@ -42,6 +45,7 @@
   'pages/contact',
   'pages/team',
   'pages/schedule',
+  'pages/massage',
   'pages/getting-started',
   'pages/events',
   'pages/about',
