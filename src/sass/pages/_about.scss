@@ -36,13 +36,6 @@
         line-height: 1.5;
       }
     }
-    // &::after {
-    //     content: '';
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 100%;
-    //     background: hsla(186, 63%, 67%,.7);
-    // }
   }
 
   &--cta {
@@ -71,17 +64,10 @@
         margin-top: 1em;
       }
 
-      .melody-pose {
-        width: 225px;
+      .pose-cutout {
+        height: 300px;
         @include mq (small) {
-          width: 430px;
-        }
-      }
-
-      .ina-pose {
-        width: 225px;
-        @include mq (small) {
-          width: 300px;
+          height: 400px;
         }
       }
     }
