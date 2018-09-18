@@ -1,20 +1,28 @@
 .massage {
     &--rates {
         padding: 5em calc(50% - 600px);
-        background: #a8c0ff;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #a8c0ff, $secondary-color);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #a8c0ff, $secondary-color); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #a8c0ff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#a8c0ff), to($secondary-color));
+        background: linear-gradient(to bottom, #a8c0ff, $secondary-color); 
         &_grid {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             @include mq(medium) {
                 display: grid;
                 grid-gap: 20px;
                 grid-template-columns: repeat(4, 1fr);
-                align-items: flex-start;
+                -webkit-box-align: start;
+                    -ms-flex-align: start;
+                        align-items: flex-start;
             }
-
         }
     }
 }
