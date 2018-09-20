@@ -7,10 +7,16 @@
 
     &--intro {
         >div {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
 
             >div {
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
                 flex: 1;
 
                 img {
@@ -30,16 +36,27 @@
     }
 
     &--pricing {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
 
         @include mq (small) {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
             flex-direction: row;
         }
 
         &-item {
             margin: 1em 0.5em;
+            -webkit-box-flex: 1;
+            -ms-flex: 1 300px;
             flex: 1 300px;
             text-align: center;
 
@@ -66,7 +83,25 @@
 
             &-bottom {
                 padding: 2em 1.25em;
+                height: 300px;
                 background-color: #fff;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+
+                p {
+                    padding: 0 2em;
+                }
 
                 small {
                     margin-bottom: 15px;
@@ -78,11 +113,17 @@
 
     &--review-callout {
         >div {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
         }
 
         &-img {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
             flex: 1;
 
             img {
@@ -92,6 +133,8 @@
         }
 
         &-txt {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
             flex: 1;
 
             >p {
