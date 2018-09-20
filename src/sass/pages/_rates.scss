@@ -31,9 +31,27 @@
         padding: 7em calc(50% - 480px) 8em;
 
         &_grid {
-            display: grid;
-            grid-gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include mq(small) {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+            }
+            .pricing-card {
+                max-width: 300px;
+                @include mq(small) {
+                    max-width: initial;
+                }
+            }
+            .pricing-card_bottom {
+                height: initial;
+                @include mq(small) {
+                    height: 255px;
+                }
+            }
         }
     }
 
