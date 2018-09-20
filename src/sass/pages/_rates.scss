@@ -26,12 +26,18 @@
             }
         }
     }
+
     &--category {
         padding: 7em calc(50% - 480px) 8em;
+
         &_grid {
             display: grid;
             grid-gap: 20px;
             grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
         }
+    }
+
+    .wrapper-wide {
+        padding: 7em calc(50% - 600px) 8em;
     }
 }
