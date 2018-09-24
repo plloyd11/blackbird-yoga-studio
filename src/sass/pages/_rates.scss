@@ -49,7 +49,7 @@
             .pricing-card_bottom {
                 height: initial;
                 @include mq(small) {
-                    height: 255px;
+                    height: 275px;
                 }
             }
         }
