@@ -11,6 +11,8 @@
 
   {{> global-footer }}
 
+  {{> modal }}
+
   {{> scripts }}
 
 </body>

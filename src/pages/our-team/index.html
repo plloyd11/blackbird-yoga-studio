@@ -60,13 +60,43 @@ layout: default.hbt
       <div class="team--individual">
         <div class="team--individual-img">
           <img src="/img/team/jen.jpg" class="team-image" alt="Jen Tapia" data-name="jen" />
-          <h3>Jen Tapia</h3>
+          <div id="jen">
+              <h3 id="show-modal" @click="showModal = true">Jen Tapia</h3>
+              <!-- use the modal component, pass in the prop -->
+              <modal v-if="showModal" @close="showModal = false">
+                <div slot="body" class="modal-content">
+                  <div class="modal-content_img">
+                      <img src="/img/team/jen-modal.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="modal-content_text">
+                      <h2>Jennifer Tapia</h2>
+                      <p>Yoga has intrigued Jen for years, but she didn’t think it could be for her.  Meditation classes, words of wisdom from others and time spent soul searching helped spark her interest more. In December 2017, Jen had her first yoga experience at Blackbird Yoga Studio. From that day forward she fell in love with the practice, enrolled in Nicole D’Andrea’s 200 Hour Yoga Teacher Training program and graduated in June of 2018. She is filled with appreciation for the BYS teachers sharing their passion of yoga with her and stoking the fire within. Yoga has done wonders for Jen’s body, spirit and mind. She is grateful for the opportunity to gently guide others in their own practice with support, proper alignment, pranayama and positive energy.</p>
+                  </div>
+                </div>
+              </modal>
+            </div>
         </div>
       </div>
       <div class="team--individual">
         <div class="team--individual-img">
           <img src="/img/team/kathleen.jpg" class="team-image" alt="Kathleen Philip" data-name="kathleen" />
-          <h3>Kathleen Philips</h3>
+          <div id="kathleen">
+              <h3 id="show-modal" @click="showModal = true">Kathleen Philips</h3>
+              <!-- use the modal component, pass in the prop -->
+              <modal v-if="showModal" @close="showModal = false">
+                <div slot="body" class="modal-content">
+                  <div class="modal-content_img">
+                      <img src="/img/team/kathleen-modal.jpg" alt="" class="img-responsive">
+                  </div>
+                  <div class="modal-content_text">
+                      <h2>Kathleen Philips</h2>
+                      <p>Kathleen has been studying dance and movement for a large part of her life. She studied ballet, jazz and tap (her favorite) as a young child and continued on through college and as a young adult. 
+                        Structured dance morphed into Aerobics and other types of dance inspired fitness routines but she never forgot those early years. After different injuries sidelined her current fitness routine, she decided on a whim to venture into Blackbird Yoga Studio and that day changed her life. She quickly realized how much she loved the practice of yoga and the community that surrounded it. 
+                        Stepping onto her mat every day has allowed her in the simplest terms the ability to connect with her mind, body and spirit. Kathleen completed her 200 Hour Teacher Training at Blackbird Yoga Studio in June of 2018. </p>
+                  </div>
+                </div>
+              </modal>
+            </div>
         </div>
       </div>
       <div class="team--individual">
@@ -78,7 +108,21 @@ layout: default.hbt
       <div class="team--individual">
         <div class="team--individual-img">
           <img src="/img/team/valerie.jpg" class="team-image" alt="Valerie Mitchell" data-name="valerie" />
-          <h3>Valerie Mitchell</h3>
+          <div id="valerie">
+            <h3 id="show-modal" @click="showModal = true">Valerie Mitchell</h3>
+            <!-- use the modal component, pass in the prop -->
+            <modal v-if="showModal" @close="showModal = false">
+              <div slot="body" class="modal-content">
+                <div class="modal-content_img">
+                    <img src="/img/team/valerie-modal.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="modal-content_text">
+                    <h2>Valerie Mitchell</h2>
+                    <p>Valerie spent the last 15 years exploring various paths of yoga before deciding to fulfill her dream of becoming a teacher. She completed her 200 Hour Teacher Training at Juluka Yoga Studio in Hillsdale, NJ. In deepening her own awareness and understanding of the principles of Hatha yoga, she learned that there is no “one way” to practice and you need not to be a former gymnast to partake in all the benefits that yoga has to offer. Yoga has also been a beneficial oasis away from the high-stress demands of her meeting planning job. Valerie views teaching yoga as a way to increase energy and awareness of your body through a variety of asanas while honoring your own unique level of fitness. Her teaching style is accessible to all abilities and she has a keen interest in helping beginners as well as those who want to age well and remain strong for years to come. A runner who has completed five marathons and numerous road races, Valerie is passionate about bringing this moving meditation to those who want to gain or maintain flexibility while pursuing sports activities like skiing, cycling, and golf. </p>
+                </div>
+              </div>
+            </modal>
+          </div>
         </div>
       </div>
       <div class="team--individual">
