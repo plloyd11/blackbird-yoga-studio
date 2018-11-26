@@ -49,11 +49,16 @@
     padding: 30px 20px;
 
     @media (min-width: 1200px) {
-      padding: 45px 40px 30px;
+      padding: 60px 40px 40px;
+    }
+
+    h2 {
+      font-weight: 600;
     }
 
     >p {
       font-size: 16px;
+      line-height: 1.4;
     }
   }
 }
