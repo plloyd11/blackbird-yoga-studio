@@ -29,7 +29,10 @@
 }
 
 .is-size-3 {
-    font-size: 2rem;
+    font-size: 1.45rem;
+    @include mq (small) {
+        font-size: 2rem;
+    }
 }
 
 .is-size-4 {

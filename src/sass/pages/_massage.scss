@@ -4,16 +4,33 @@
             margin-top: 100px;
             margin-bottom: 100px;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
+            align-items: center;
+
+            @include mq (small) {
+                flex-direction: row;
+                align-items: flex-start;
+            }
 
             &_text {
                 max-width: 475px;
                 flex: 1;
+                text-align: center;
+
+                @include mq(small) {
+                    text-align: left;
+                }
             }
 
             &_img {
                 max-width: 578px;
                 flex: 2;
+                order: 2;
+
+                @include mq (small) {
+                    order: initial;
+                }
             }
         }
     }
@@ -26,6 +43,11 @@
 
         &_wrapper {
             display: flex;
+            flex-direction: column;
+
+            @include mq (small) {
+                flex-direction: row;
+            }
         }
 
         &_calendar {
@@ -35,6 +57,7 @@
         }
 
         &_grid {
+            margin-top: 50px;
             flex: 1;
             height: 100%;
             display: -webkit-box;
@@ -49,6 +72,7 @@
             align-items: center;
 
             @include mq(medium) {
+                margin-top: initial;
                 margin-left: 20px;
                 display: grid;
                 grid-gap: 20px;
@@ -57,14 +81,30 @@
                 -ms-flex-align: start;
                 align-items: flex-start;
             }
+
+            .pricing-card {
+                max-width: 300px;
+
+                @include mq (small) {
+                    max-width: initial;
+                }
+            }
         }
     }
 
     &--teachers {
+        padding-top: 5em;
+
         &_wrapper {
-            display: grid;
-            grid-gap: 20px;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include mq (small) {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: 1fr 1fr;
+            }
         }
     }
 
@@ -77,10 +117,37 @@
         background: url('/img/massage/callout.jpg') no-repeat center center;
         background-size: cover;
         color: #fff;
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 400;
+            line-height: 1.25;
+
+            @include mq (small) {
+                font-size: 1.85rem;
+            }
+        }
+
+        h2 {
+            margin-bottom: 5px;
+            font-size: 1.45rem;
+            font-weight: 400;
+            line-height: 1.25;
+
+            @include mq (small) {
+                margin-bottom: 15px;
+                font-size: 2.15rem;
+            }
+        }
     }
 
     &--individual {
         margin: 0;
+        margin-bottom: 1.5em;
+
+        @include mq (small) {
+            margin-bottom: initial;
+        }
 
         &-img {
             position: relative;
