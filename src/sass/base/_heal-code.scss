@@ -18,7 +18,7 @@ div.list_view li.odd {
   background: inherit !important;
 }
 
-.week_links > span a {
+.week_links>span a {
   background: #fff !important;
   font-size: 11px !important;
 }
@@ -28,6 +28,7 @@ div.list_view li.odd {
   font-weight: 300;
   line-height: 1.35;
   color: #333E47;
+
   div {
     font-size: 1.15rem;
     line-height: 1.5;
@@ -40,4 +41,8 @@ div.list_view li.odd {
 
 div.healcode div.hc_footer * {
   width: 1px;
+}
+
+.ui-datepicker-inline {
+  width: 100% !important;
 }

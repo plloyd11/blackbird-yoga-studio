@@ -109,3 +109,17 @@ new Vue({
         showModal: false
     }
 })
+
+new Vue({
+    el: '#victoria',
+    data: {
+        showModal: false
+    }
+})
+
+new Vue({
+    el: '#brandi',
+    data: {
+        showModal: false
+    }
+})

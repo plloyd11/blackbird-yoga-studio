@@ -14,7 +14,7 @@
         padding: 1em 2.25em;
         color: #333;
         background: #fff;
-        border-bottom: 1px solid hsla(0, 0%, 85%,.8);
+        border-bottom: 1px solid hsla(0, 0%, 85%, .8);
 
         >p {
             font-size: 3rem;
@@ -30,12 +30,11 @@
 
     &_bottom {
         padding: 2em 2.5em;
-        height: 250px;
+        height: 175px;
         background-color: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
 
         >p {
             font-size: 1.15rem;
