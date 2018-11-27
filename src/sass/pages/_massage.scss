@@ -1,27 +1,125 @@
 .massage {
+    &--services {
+        &_item {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            display: flex;
+            justify-content: space-between;
+
+            &_text {
+                max-width: 475px;
+                flex: 1;
+            }
+
+            &_img {
+                max-width: 578px;
+                flex: 2;
+            }
+        }
+    }
+
     &--rates {
         padding: 5em calc(50% - 600px);
         background: #a8c0ff;
         background: -webkit-gradient(linear, left top, left bottom, from(#a8c0ff), to($secondary-color));
-        background: linear-gradient(to bottom, #a8c0ff, $secondary-color); 
+        background: linear-gradient(to bottom, #a8c0ff, $secondary-color);
+
+        &_wrapper {
+            display: flex;
+        }
+
+        &_calendar {
+            padding: 2em;
+            flex: 1;
+            background: #fff;
+        }
+
         &_grid {
+            flex: 1;
+            height: 100%;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
             -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+
             @include mq(medium) {
+                margin-left: 20px;
                 display: grid;
                 grid-gap: 20px;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 -webkit-box-align: start;
-                    -ms-flex-align: start;
-                        align-items: flex-start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    &--teachers {
+        &_wrapper {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &--callout {
+        padding: 150px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url('/img/massage/callout.jpg') no-repeat center center;
+        background-size: cover;
+        color: #fff;
+    }
+
+    &--individual {
+        margin: 0;
+
+        &-img {
+            position: relative;
+        }
+
+        &-name {
+            padding: 6px 5px;
+            bottom: 0;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            color: #fff;
+            background: hsla(191, 55%, 53%, .8);
+            cursor: pointer;
+
+            @include mq(small) {
+                padding: 8px 10px;
+            }
+
+            h3 {
+                margin-bottom: 0;
+                font-size: 12px;
+                font-weight: 400;
+
+                @include mq(small) {
+                    font-size: 18px;
+                }
+            }
+
+            a {
+                font-size: 8px;
+                margin-bottom: 0;
+                color: #fff;
+
+                @include mq(small) {
+                    font-size: 16px;
+                }
             }
         }
     }
