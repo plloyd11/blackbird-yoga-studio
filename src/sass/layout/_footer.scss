@@ -21,6 +21,7 @@
   &-address {
     order: 2;
     @include mq (small) {
+      margin-left: 2.25em;
       order: 1;
     }
 

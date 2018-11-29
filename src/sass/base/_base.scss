@@ -76,7 +76,10 @@ section > * {
 }
 
 .section-spacing {
-    margin-bottom: 5em;
+    margin-bottom: 2em;
+    @include mq (small) {
+        margin-bottom: 5em;
+    }
 }
 
 .header-spacing {

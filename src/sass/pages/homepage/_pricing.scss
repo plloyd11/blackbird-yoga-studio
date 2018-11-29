@@ -1,7 +1,11 @@
 .homepage--pricing {
-    padding-top: 6.5em;
-    padding-bottom: 6.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     background: $primary-gradient;
+    @include mq (small) {
+        padding-top: 6.5em;
+        padding-bottom: 6.5em;
+    }
 
     &-wrapper {
         display: -webkit-box;
