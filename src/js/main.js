@@ -123,3 +123,10 @@ new Vue({
         showModal: false
     }
 })
+
+new Vue({
+    el: '#veronica',
+    data: {
+        showModal: false
+    }
+})

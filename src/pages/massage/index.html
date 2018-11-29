@@ -5,22 +5,20 @@ layout: default.hbt
 ---
 
 <main class="team">
-    <section class="article-intro section-spacing">
+    <section class="article-intro">
         <h1>Massage Services</h1>
-        <h3>Your body is in good hands<h3>
+        <h3>Your body is in good hands</h3>
         <img src="/img/massage/massage-hero.jpg" srcset="/img/massage/massage-hero.jpg 1200w" alt="Massage" class="img-responsive">
     </section>
     <section class="massage--intro">
-        <div class="wrapper section-spacing">
-            <div>
-                <p class="txt-center paragraph-wide">Self care takes many forms. Therapeutic touch and customized bodywork have
-                    endless benefits from decreased stress and anxiety to improved range of motion and decreased pain.
-                    Massage is the perfect compliment to any yoga practice.</p>
-                <p class="txt-center paragraph-wide">All of our Massage Therapists are experienced in a wide arrayof settings and
-                    techniques and are fully licensed by the state of NJ. During your massage, the studio is
-                    screened-off and fully closed to you for your privacy and comfort. Our therapists offer 60 and 90
-                    minutes sessions on most weekdays, weekends and by special appointment.</p>
-            </div>
+        <div class="wrapper-wide section-spacing">
+            <p class="">Self care takes many forms. Therapeutic touch and customized bodywork have
+                endless benefits from decreased stress and anxiety to improved range of motion and decreased pain.
+                Massage is the perfect compliment to any yoga practice.</p>
+            <p class="">All of our Massage Therapists are experienced in a wide arrayof settings and
+                techniques and are fully licensed by the state of NJ. During your massage, the studio is
+                screened-off and fully closed to you for your privacy and comfort. Our therapists offer 60 and 90
+                minutes sessions on most weekdays, weekends and by special appointment.</p>
         </div>
     </section>
     <section class="massage--services">
@@ -156,6 +154,31 @@ layout: default.hbt
                                     <p>Victoria received her certification and NJ license in Massage and Bodywork Therapy from Sun Institute of NJ. She became certified by the American Association of Drugless Practitioners as a Health Counselor from the Institute for Integrative Nutrition in 2010. Victoria is affiliated with the American Massage Therapy Association and assists/mentors current students at Sun Institute for Massage Therapy. Victoria is also certified in CPR and First Aid. </p>
                                     <p>Victoria’s method in practice is to create a customized interaction of bodywork therapy for her clients’ overall wellness. Currently, her experience in bodywork modalities is in traditional Swedish (circulation and relaxation), Deep tissue (trigger point), Sports Massage/Assisted Stretch for increased range of motion and Reflexology.</p>
                                     <p>Victoria’s mission and dedication are to provide clients with nurturing treatments and continuing education to promote relaxation and whole-body self-healing. She leads body therapy treatments that respect and utilize the synergy of the human mind, body, and spirit for unlimited results.</p>
+                                </div>
+                            </div>
+                        </modal>
+                    </div>
+                </div>
+            </div>
+            <div class="massage--individual">
+                <div class="massage--individual-img">
+                    <img src="/img/massage/veronica.jpg" class="team-image" alt="Veronica Busciglio" />
+                    <div id="veronica">
+                        <div id="show-modal" @click="showModal = true" class="team--individual-name">
+                            <h3>Veronica Busciglio</h3>
+                            <a>Learn More</a>
+                        </div>
+                        <!-- use the modal component, pass in the prop -->
+                        <modal v-if="showModal" @close="showModal = false">
+                            <div slot="body" class="modal-content">
+                                <div class="modal-content_img">
+                                    <img src="/img/massage/veronica-modal.jpg" alt="" class="img-responsive">
+                                </div>
+                                <div class="modal-content_text">
+                                    <h2>Veronica Busciglio</h2>
+                                    <p>Veronica Busciglio is a Registered Nurse and Certified Massage Therapist (550 hr) and is consistent in taking continuing education courses and expanding her skill set. She specializes in pre-natal, infant, deep tissue, sports massage, Shiatsu and Swedish massage as well as reflexology.</p>
+                                    <p>Veronica resides in New Jersey with her two boys and her family is her greatest joy. She says that her main goal in life is to raise her children in a happy, healthy environment and to help guide them to be the best they can be so they may find their happiness through love and light. Veronica enjoys practicing and teaching yoga, pilates, hiking, bouldering and working out. She enjoys the beach and exploring the outdoors. She puts much focus on health and well-being, cooking and spending time with her loved ones.</p>
+                                    <p>Veronica chooses to use only products that are pure, organic and non-toxic during her treatments. Her goal is for you to leave her table with a relaxed mind, a rejuvenated body, and an uplifted spirit.</p>
                                 </div>
                             </div>
                         </modal>

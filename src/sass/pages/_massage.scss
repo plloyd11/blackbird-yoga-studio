@@ -1,14 +1,25 @@
 .massage {
+    &--intro {
+        background: url(/img/massage/intro-img.jpg) no-repeat center;
+        background-size: cover;
+        > div {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            p {
+                max-width: 578px;
+            }
+        }
+    }
     &--services {
         &_item {
-            margin-top: 100px;
-            margin-bottom: 100px;
+            margin-bottom: 75px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
 
-            @include mq (small) {
+            @include mq (medium) {
+                margin-bottom: 125px;
                 flex-direction: row;
                 align-items: flex-start;
             }
@@ -18,7 +29,7 @@
                 flex: 1;
                 text-align: center;
 
-                @include mq(small) {
+                @include mq(medium) {
                     text-align: left;
                 }
             }
@@ -28,7 +39,7 @@
                 flex: 2;
                 order: 2;
 
-                @include mq (small) {
+                @include mq (medium) {
                     order: initial;
                 }
             }
@@ -45,12 +56,15 @@
             display: flex;
             flex-direction: column;
 
-            @include mq (small) {
+            @include mq (medium) {
                 flex-direction: row;
             }
         }
 
         &_calendar {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 550px;
             padding: 2em;
             flex: 1;
             background: #fff;
@@ -103,7 +117,7 @@
             @include mq (small) {
                 display: grid;
                 grid-gap: 20px;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     }
@@ -119,6 +133,7 @@
         color: #fff;
 
         h3 {
+            margin-bottom: 15px;
             font-size: 1.15rem;
             font-weight: 400;
             line-height: 1.25;
@@ -135,7 +150,7 @@
             line-height: 1.25;
 
             @include mq (small) {
-                margin-bottom: 15px;
+                margin-bottom: 7.5px;
                 font-size: 2.15rem;
             }
         }
