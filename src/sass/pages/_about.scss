@@ -1,83 +1,91 @@
 .about {
-  &--hero {
-    @include hero-img(url('/img/about-hero.jpg'));
-  }
-
-  &--callout {
-    width: 100%;
-    padding: 2.25em 0.75em;
-    margin-left: 0;
-    margin-right: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    @include mq (small) {
-      height: 55vh;
-      padding: 0;
+    &--hero {
+        @include hero-img(url('/img/about-hero.jpg'));
     }
 
-    p {
-      position: relative;
-      color: #fff;
-      font-size: 0.95rem;
-      text-align: center;
-      z-index: 10;
-
-      &:nth-of-type(2) {
-        margin-bottom: 0;
-      }
-      @include mq (small) {
-        font-size: 1.15rem;
-        line-height: 1.5;
-      }
-    }
-  }
-
-  &--cta {
-    margin-top: 5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    @include mq (small) {
-      flex-direction: row;
-    }
-
-    > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      &:first-of-type {
-        margin-bottom: 1.5em;
-        @include mq (small) {
-          margin-bottom: 0;
+    &--callout {
+        width: 100%;
+        padding: 2.25em 0.75em;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @include mq(small) {
+            height: 55vh;
+            padding: 0;
         }
-      }
 
-      > h3 {
-        margin-top: 1em;
-      }
+        p {
+            position: relative;
+            color: #fff;
+            font-size: 0.95rem;
+            text-align: center;
+            z-index: 10;
 
-      .pose-cutout {
-        height: 300px;
-        @include mq (small) {
-          height: 400px;
+            &:nth-of-type(2) {
+                margin-bottom: 0;
+            }
+            @include mq(small) {
+                font-size: 1.15rem;
+                line-height: 1.5;
+            }
         }
-      }
     }
-  }
+
+    &--cta {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @include mq(small) {
+            flex-direction: row;
+        }
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &:first-of-type {
+                margin-bottom: 1.5em;
+                @include mq(small) {
+                    margin-bottom: 0;
+                }
+            }
+
+            > h3 {
+                margin-top: 1em;
+            }
+
+            .pose-cutout {
+                height: 300px;
+                @include mq(small) {
+                    height: 400px;
+                }
+            }
+        }
+    }
 }
 
 .callout-1 {
-  background-image: url('/img/callout-1.jpg');
+    background-image: url('/img/callout-1.jpg');
 }
 
 .callout-2 {
-  background-image: url('/img/callout-2.jpg');
+    background-image: url('/img/callout-2.jpg');
+}
+
+.broadly-reviews {
+    margin: 2em 0;
+    height: 1000px;
+    padding: 1em;
+    overflow-y: scroll;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
