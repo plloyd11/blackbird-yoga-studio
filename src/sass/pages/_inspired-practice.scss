@@ -1,0 +1,170 @@
+.inspired-practice {
+    &--hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include mq(small) {
+            flex-direction: row;
+        }
+        div {
+            margin-top: 8em;
+            padding-left: calc(50% - 38em);
+            @include mq(small) {
+                margin-top: 0;
+            }
+        }
+        h1 {
+            margin-bottom: 16px;
+            font-size: 38px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            line-height: 48px;
+            font-weight: 500;
+            @include mq(small) {
+                margin-bottom: 32px;
+                font-size: 48px;
+                line-height: 58px;
+                text-align: left;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            margin-bottom: 48px;
+            text-align: center;
+            @include mq(small) {
+                text-align: left;
+            }
+        }
+
+        a {
+            width: 235px;
+            margin: 0 auto;
+            display: block;
+            @include mq(small) {
+                width: inherit;
+                display: inline-block;
+            }
+        }
+
+        img {
+            width: 100%;
+            padding-top: 5em;
+            margin-right: 0;
+            @include mq(small) {
+                max-width: 625px;
+            }
+            @media (min-width: 1235px) {
+                max-width: 875px;
+            }
+        }
+    }
+    &--studio {
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            @include mq(small) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            > div {
+                text-align: center;
+                flex: 1;
+                @include mq(small) {
+                    text-align: left;
+                }
+                &:first-of-type {
+                    max-width: 478px;
+                }
+                &:last-of-type {
+                    max-width: 578px;
+                }
+            }
+        }
+    }
+    &--icons {
+        h3 {
+            font-size: 24px;
+            color: #415262;
+            letter-spacing: 0;
+            line-height: 28px;
+            text-align: center;
+        }
+        &_grid {
+            margin-top: 48px;
+            display: grid;
+            grid-gap: 48px;
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            > div {
+                display: flex;
+                flex-direction: column;
+                img {
+                    margin-bottom: 24px;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &--start {
+        padding-left: 0;
+        background: url('/img/inspired-practice-planning/get-started-bg.svg') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include mq(small) {
+            height: 1028px;
+            flex-direction: row;
+        }
+        @include mq(thunderbolt) {
+            height: 1200px;
+        }
+        img {
+            margin-left: 0;
+            order: 2;
+            display: none;
+            @include mq(small) {
+                max-width: 625px;
+                order: 1;
+                display: block;
+            }
+            @media (min-width: 1235px) {
+                max-width: 750px;
+            }
+        }
+        > div {
+            padding-top: 5em;
+            padding-bottom: 4em;
+            margin: 0 auto;
+            max-width: 578px;
+            order: 1;
+            text-align: center;
+
+            @include mq(small) {
+                text-align: left;
+                padding-top: inherit;
+                padding-bottom: inherit;
+                padding-left: 5%;
+                order: 2;
+            }
+            @include mq(large) {
+                padding-left: 0;
+            }
+        }
+        h2 {
+            font-size: 48px;
+            color: #ffffff;
+            letter-spacing: 0.48px;
+            line-height: 58px;
+        }
+        p {
+            font-size: 18px;
+            color: #ffffff;
+            letter-spacing: 0;
+            line-height: 28px;
+        }
+    }
+}

@@ -21,6 +21,17 @@
     }
 }
 
+.btn-cta {
+    background: #f8b6b4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    font-size: 18px;
+    &:hover,
+    &:focus {
+        background: #f9a19f;
+    }
+}
+
 .btn-ghost {
     background: inherit;
     border: 1px solid #fff;

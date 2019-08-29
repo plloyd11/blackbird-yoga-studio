@@ -1,10 +1,11 @@
 // This file contains all application-wide Sass variables.
 
 // Colors
-$primary-color: #46B1C9;
-$secondary-color: #6D4DC6;
-$bg-dark-gray: #42474C;
-$primary-gradient: linear-gradient(to bottom, #a8c0ff, #6D4DC6);
+$primary-color: #46b1c9;
+$secondary-color: #6d4dc6;
+$primary-pink: #f8b6b4;
+$bg-dark-gray: #42474c;
+$primary-gradient: linear-gradient(to bottom, #a8c0ff, #6d4dc6);
 
 // Layout
 $section-spacing: 0 0.66667em;
@@ -23,7 +24,7 @@ $text-color: rgb(34, 34, 34) !default;
 
 // Main brand color
 // @type Color
-$brand-color: #9DA890;
+$brand-color: #9da890;
 
 // Light grey
 // @type Color
@@ -41,9 +42,9 @@ $dark-grey: rgb(68, 68, 68) !default;
 // @prop {String} keys - Keys are identifiers mapped to a given length
 // @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+    'small': 320px,
+    'medium': 768px,
+    'large': 1024px
 ) !default;
 
 // Relative or absolute URL where all assets are served from
