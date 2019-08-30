@@ -4,13 +4,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        @include mq(small) {
+        @include mq(medium) {
             flex-direction: row;
         }
         div {
             margin-top: 8em;
             padding-left: calc(50% - 38em);
-            @include mq(small) {
+            @include mq(medium) {
                 margin-top: 0;
             }
         }
@@ -21,7 +21,7 @@
             letter-spacing: 0.5px;
             line-height: 48px;
             font-weight: 500;
-            @include mq(small) {
+            @include mq(medium) {
                 margin-bottom: 32px;
                 font-size: 48px;
                 line-height: 58px;
@@ -32,8 +32,9 @@
         p {
             font-weight: 400;
             margin-bottom: 48px;
+            max-width: 500px;
             text-align: center;
-            @include mq(small) {
+            @include mq(medium) {
                 text-align: left;
             }
         }
@@ -42,7 +43,7 @@
             width: 235px;
             margin: 0 auto;
             display: block;
-            @include mq(small) {
+            @include mq(medium) {
                 width: inherit;
                 display: inline-block;
             }
@@ -51,8 +52,8 @@
         img {
             width: 100%;
             padding-top: 5em;
-            margin-right: 0;
-            @include mq(small) {
+            @include mq(medium) {
+                margin-right: 0;
                 max-width: 625px;
             }
             @media (min-width: 1235px) {
@@ -64,14 +65,17 @@
         .flex-container {
             display: flex;
             flex-direction: column;
-            @include mq(small) {
+            align-items: center;
+            @include mq(medium) {
                 flex-direction: row;
                 justify-content: space-between;
             }
             > div {
                 text-align: center;
                 flex: 1;
-                @include mq(small) {
+                margin-top: 2em;
+                @include mq(medium) {
+                    margin-top: 0;
                     text-align: left;
                 }
                 &:first-of-type {
@@ -84,6 +88,7 @@
         }
     }
     &--icons {
+        margin-top: 4em;
         h3 {
             font-size: 24px;
             color: #415262;
@@ -109,27 +114,28 @@
         }
     }
     &--start {
+        margin-top: 4em;
         padding-left: 0;
+        padding-bottom: 3em;
         background: url('/img/inspired-practice-planning/get-started-bg.svg') no-repeat center center;
         background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
-        @include mq(small) {
-            height: 1028px;
+        @include mq(medium) {
+            height: 1200px;
+            padding-bottom: inherit;
             flex-direction: row;
         }
-        @include mq(thunderbolt) {
-            height: 1200px;
-        }
         img {
+            position: relative;
+            bottom: 50px;
             margin-left: 0;
             order: 2;
-            display: none;
-            @include mq(small) {
+            @include mq(medium) {
+                position: static;
                 max-width: 625px;
                 order: 1;
-                display: block;
             }
             @media (min-width: 1235px) {
                 max-width: 750px;
@@ -143,7 +149,7 @@
             order: 1;
             text-align: center;
 
-            @include mq(small) {
+            @include mq(medium) {
                 text-align: left;
                 padding-top: inherit;
                 padding-bottom: inherit;
@@ -155,16 +161,20 @@
             }
         }
         h2 {
+            margin-bottom: 32px;
             font-size: 48px;
             color: #ffffff;
-            letter-spacing: 0.48px;
             line-height: 58px;
         }
         p {
+            margin-bottom: 24px;
+            padding-left: 0.35em;
+            padding-right: 0.35em;
             font-size: 18px;
             color: #ffffff;
             letter-spacing: 0;
             line-height: 28px;
+            font-weight: 500;
         }
     }
 }
