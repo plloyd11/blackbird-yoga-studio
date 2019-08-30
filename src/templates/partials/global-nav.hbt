@@ -14,6 +14,6 @@
         <a href="/contact/" class="global--main-nav-item nav-cta animsition-link">Contact</a>
     </nav>
     <nav class="global--main-nav-mobile">
-      <button class="nav-cta mobile-menu-btn">Menu</button>
+        <button class="nav-cta mobile-menu-btn">Menu</button>
     </nav>
 </header>

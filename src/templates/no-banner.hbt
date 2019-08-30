@@ -7,8 +7,6 @@
 
   {{> global-nav }}
 
-  {{> alert-banner }}
-
   {{{ contents }}}
 
   {{> global-footer }}

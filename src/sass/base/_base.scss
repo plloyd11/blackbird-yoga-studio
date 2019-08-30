@@ -25,9 +25,11 @@ main {
 }
 
 .content-page {
+    padding-top: 5em;
     padding-left: 1em;
     padding-right: 1em;
     @include mq(medium) {
+        padding-top: 2em;
         padding-left: 0;
         padding-right: 0;
     }
