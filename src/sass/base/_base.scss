@@ -61,17 +61,12 @@ input,
 optgroup,
 select,
 textarea {
-    font: normal 125% / 1.4 $text-font-stack;
+    font: normal 125% / 1.4 $bodyFont;
 }
 
 section > * {
     margin-left: 0.66667em;
     margin-right: 0.66667em;
-}
-
-.container,
-.wrapper {
-    padding: 0 calc(50% - 480px);
 }
 
 .wrapper-wide {

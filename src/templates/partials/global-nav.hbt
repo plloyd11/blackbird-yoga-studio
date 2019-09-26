@@ -3,15 +3,18 @@
         <a href="/"><img src="/img/logo/logo-black.svg"></a>
     </div>
     <nav class="global--main-nav-right">
-        <a href="/about/" class="global--main-nav-item animsition-link">About</a>
-        <a href="/schedule/" class="global--main-nav-item animsition-link">Schedule</a>
-        <a href="/events/" class="global--main-nav-item animsition-link">Events</a>
-        <a href="/massage/" class="global--main-nav-item animsition-link">Massage</a>
-        <a href="/rates/" class="global--main-nav-item animsition-link">Rates</a>
-        <a href="/our-team/" class="global--main-nav-item animsition-link">Our Team</a>
-        <a href="/getting-started/" class="global--main-nav-item animsition-link">Getting Started</a>
-        <a href="/teacher-training/" class="global--main-nav-item">Teacher Training</a>
-        <a href="/contact/" class="global--main-nav-item nav-cta animsition-link">Contact</a>
+        <a href="/schedule/" class="global--main-nav-item">Schedule</a>
+        <a href="/classes/" class="global--main-nav-item">Classes</a>
+        <a href="/massage/" class="global--main-nav-item">Massage</a>
+        <a href="/rates/" class="global--main-nav-item">Rates</a>
+        <div class="has-dropdown is-hoverable global--main-nav-item navbar-item">
+            <a href="/about/" class="navbar-link">About</a>
+            <div class="navbar-dropdown">
+                <a href="/our-team/" class="navbar-item">Our Team</a>
+                <a href="/getting-started/" class="navbar-item">Getting Started</a>
+            </div>
+        </div>
+        <a href="/contact/" class="global--main-nav-item">Contact</a>
     </nav>
     <nav class="global--main-nav-mobile">
         <button class="nav-cta mobile-menu-btn">Menu</button>

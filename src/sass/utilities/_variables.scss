@@ -11,12 +11,9 @@ $primary-gradient: linear-gradient(to bottom, #a8c0ff, #6d4dc6);
 $section-spacing: 0 0.66667em;
 
 // Regular font family
-// @type List
-$text-font-stack: 'Montserrat', sans-serif;
 
-// Code (monospace) font family
-// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$headerFont: 'Poppins', sans-serif;
+$bodyFont: 'Nunito', sans-serif;
 
 // Copy text color
 // @type Color

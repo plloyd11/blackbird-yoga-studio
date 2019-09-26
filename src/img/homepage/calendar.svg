@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="702px" viewBox="0 0 1440 702" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="150" height="72" rx="12"></rect>
+        <filter x="-5.7%" y="-10.4%" width="114.0%" height="129.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="150" height="72" rx="12"></rect>
+        <filter x="-5.7%" y="-10.4%" width="114.0%" height="129.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="150" height="72" rx="12"></rect>
+        <filter x="-5.7%" y="-10.4%" width="114.0%" height="129.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="0" y="0" width="150" height="72" rx="12"></rect>
+        <filter x="-5.7%" y="-10.4%" width="114.0%" height="129.2%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="0" y="0" width="150" height="72" rx="12"></rect>
+        <filter x="-5.7%" y="-10.4%" width="114.0%" height="129.2%" filterUnits="objectBoundingBox" id="filter-10">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-11" x="0" y="0" width="150" height="72" rx="12"></rect>
+        <filter x="-5.7%" y="-10.4%" width="114.0%" height="129.2%" filterUnits="objectBoundingBox" id="filter-12">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -1243.000000)" id="week-at-blackbird">
+            <g transform="translate(0.000000, 1143.000000)">
+                <g id="calendar" transform="translate(0.000000, 100.000000)">
+                    <path d="M0,701 L1440,701" id="Line-Copy" stroke-opacity="0.6" stroke="#AEA0C0" stroke-linecap="square"></path>
+                    <g id="days" transform="translate(124.000000, 23.500000)">
+                        <g id="sunday">
+                            <g id="classes" transform="translate(0.000000, 142.500000)">
+                                <g id="unwind" transform="translate(0.000000, 192.000000)">
+                                    <g id="Rectangle">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                        <use fill="#F7CCCB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    </g>
+                                    <text id="11:30am---12:45am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                        <tspan x="12" y="56">11:30am - 12:45am</tspan>
+                                    </text>
+                                    <text id="Unwind" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                        <tspan x="12" y="39">Unwind</tspan>
+                                    </text>
+                                </g>
+                                <g id="begin" transform="translate(0.000000, 96.000000)">
+                                    <g id="Rectangle">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                        <use fill="#C8B0E5" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                    </g>
+                                    <text id="10:00am---11:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                        <tspan x="12" y="56">10:00am - 11:15am</tspan>
+                                    </text>
+                                    <text id="Begin" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                        <tspan x="12" y="39">Begin</tspan>
+                                    </text>
+                                </g>
+                                <g id="practice">
+                                    <g id="Rectangle">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                        <use fill="#8154EF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                    </g>
+                                    <text id="8:30am---9:45am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+                                        <tspan x="12" y="56">8:30am - 9:45am</tspan>
+                                    </text>
+                                    <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                                        <tspan x="12" y="39">Practice</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                            <g id="day" transform="translate(29.000000, 0.500000)">
+                                <path d="M124.5,58.5 L124.5,676.5" id="Line-2" stroke-opacity="0.6" stroke="#AEA0C0" stroke-linecap="square"></path>
+                                <text id="Sunday" font-family="Poppins-Regular, Poppins" font-size="24" font-weight="normal" fill="#494A50">
+                                    <tspan x="0" y="25">Sunday</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="monday" transform="translate(170.000000, 0.000000)">
+                            <g id="classes" transform="translate(0.000000, 158.500000)">
+                                <g id="ground" transform="translate(0.000000, 412.000000)">
+                                    <g id="Rectangle">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                        <use fill="#F7CCCB" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                    </g>
+                                    <text id="7:45pm---9:00pm" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                        <tspan x="12" y="56">7:45pm - 9:00pm</tspan>
+                                    </text>
+                                    <text id="Ground" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                        <tspan x="12" y="39">Ground</tspan>
+                                    </text>
+                                </g>
+                                <g id="begin" transform="translate(0.000000, 268.000000)">
+                                    <g id="Rectangle">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                        <use fill="#C8B0E5" fill-rule="evenodd" xlink:href="#path-9"></use>
+                                    </g>
+                                    <text id="6:15pm---7:30pm" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                        <tspan x="12" y="57">6:15pm - 7:30pm</tspan>
+                                    </text>
+                                    <text id="Begin" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                        <tspan x="12" y="40">Begin</tspan>
+                                    </text>
+                                </g>
+                                <g id="begin">
+                                    <g id="Rectangle">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                                        <use fill="#C8B0E5" fill-rule="evenodd" xlink:href="#path-11"></use>
+                                    </g>
+                                    <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                        <tspan x="12" y="56">9:00am - 10:15am</tspan>
+                                    </text>
+                                    <text id="Begin" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                        <tspan x="12" y="39">Begin</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                            <g id="day" transform="translate(25.000000, 0.500000)">
+                                <path d="M138.5,58.5 L138.5,676.5" id="Line-2" stroke-opacity="0.6" stroke="#AEA0C0" stroke-linecap="square"></path>
+                                <text id="Monday" font-family="Poppins-Regular, Poppins" font-size="24" font-weight="normal" fill="#494A50">
+                                    <tspan x="0" y="25">Monday</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="tues" transform="translate(345.000000, 0.000000)">
+                            <g id="classes" transform="translate(0.000000, 158.500000)">
+                                <g id="calendar-class" transform="translate(0.000000, 133.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#F7CCCB" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                            <tspan x="12" y="56">11:00am - 12:15pm</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                            <tspan x="12" y="39">Unwind</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(0.000000, 383.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#8154EF" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+                                            <tspan x="12" y="56">7:15pm - 8:45pm</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                                            <tspan x="12" y="39">Bliss</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(1.000000, 0.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#8154EF" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+                                            <tspan x="12" y="56">9:00am - 10:15am</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                                            <tspan x="12" y="39">Practice</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(1.000000, 260.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#C8B0E5" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                            <tspan x="12" y="56">6:00pm - 7:00pm</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                            <tspan x="12" y="39">Begin</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="day" transform="translate(24.000000, 0.500000)">
+                                <path d="M136.5,58.5 L136.5,676.5" id="Line-2" stroke-opacity="0.6" stroke="#AEA0C0" stroke-linecap="square"></path>
+                                <text id="Tuesday" font-family="Poppins-Regular, Poppins" font-size="24" font-weight="normal" fill="#494A50">
+                                    <tspan x="0" y="25">Tuesday</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="wed" transform="translate(517.000000, 0.000000)">
+                            <g id="classes" transform="translate(0.000000, 78.500000)">
+                                <g id="calendar-class" transform="translate(0.000000, 83.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#C8B0E5" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                            <tspan x="12" y="56">9:00am - 10:15am</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                            <tspan x="12" y="39">Begin</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(0.000000, 492.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#8154EF" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+                                            <tspan x="12" y="56">7:45pm - 9:00pm</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                                            <tspan x="12" y="39">Practice</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(1.000000, 0.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#F7CCCB" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                            <tspan x="12" y="56">8:00am - 8:45am</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                            <tspan x="12" y="39">Breathe</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(1.000000, 347.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#F7CCCB" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                            <tspan x="12" y="56">6:15pm - 7:30pm</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                            <tspan x="12" y="39">Unwind</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="day" transform="translate(3.000000, 0.500000)">
+                                <path d="M157.5,58.5 L157.5,676.5" id="Line-2" stroke-opacity="0.6" stroke="#AEA0C0" stroke-linecap="square"></path>
+                                <text id="Wednesday" font-family="Poppins-Regular, Poppins" font-size="24" font-weight="normal" fill="#494A50">
+                                    <tspan x="0" y="25">Wednesday</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="thurs" transform="translate(689.000000, 0.000000)">
+                            <g id="classes" transform="translate(0.000000, 158.500000)">
+                                <g id="calendar-class" transform="translate(0.000000, 133.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#F7CCCB" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                            <tspan x="12" y="56">11:00am - 12:15pm</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                            <tspan x="12" y="39">Ground</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(0.000000, 383.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#F7CCCB" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                            <tspan x="12" y="56">7:15pm - 8:30pm</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                            <tspan x="12" y="39">Ground</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(1.000000, 0.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#8154EF" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+                                            <tspan x="12" y="56">9:00am - 10:15am</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                                            <tspan x="12" y="39">Practice</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(1.000000, 260.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#C8B0E5" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                            <tspan x="12" y="56">6:00pm - 7:00pm</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                            <tspan x="12" y="39">Begin</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="day" transform="translate(20.000000, 0.500000)">
+                                <path d="M140.5,58.5 L140.5,676.5" id="Line-2" stroke-opacity="0.6" stroke="#AEA0C0" stroke-linecap="square"></path>
+                                <text id="Thursday" font-family="Poppins-Regular, Poppins" font-size="24" font-weight="normal" fill="#494A50">
+                                    <tspan x="0" y="25">Thursday</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="friday" transform="translate(861.000000, 0.000000)">
+                            <g id="classes" transform="translate(0.000000, 158.500000)">
+                                <g id="calendar-class" transform="translate(0.000000, 412.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#F7CCCB" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                            <tspan x="12" y="56">7:45pm - 9:00pm</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                            <tspan x="12" y="39">Restore</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(1.000000, 267.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#8154EF" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+                                            <tspan x="12" y="56">6:15pm - 7:30pm</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                                            <tspan x="12" y="39">Practice</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(1.000000, 0.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#8154EF" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+                                            <tspan x="12" y="56">9:00am - 10:15am</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                                            <tspan x="12" y="39">Practice</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="day" transform="translate(39.000000, 0.500000)">
+                                <text id="Friday" font-family="Poppins-Regular, Poppins" font-size="24" font-weight="normal" fill="#494A50">
+                                    <tspan x="0" y="25">Friday</tspan>
+                                </text>
+                                <path d="M121.5,58.5 L121.5,676.5" id="Line-2" stroke-opacity="0.6" stroke="#AEA0C0" stroke-linecap="square"></path>
+                            </g>
+                        </g>
+                        <g id="sat" transform="translate(1028.000000, 0.000000)">
+                            <g id="classes" transform="translate(0.000000, 142.500000)">
+                                <g id="calendar-class" transform="translate(0.000000, 96.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#8154EF" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+                                            <tspan x="12" y="56">10:00am - 11:30am</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                                            <tspan x="12" y="39">Bliss</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="calendar-class" transform="translate(1.000000, 0.000000)">
+                                    <g id="begin">
+                                        <rect id="Rectangle" fill="#C8B0E5" x="0" y="0" width="150" height="72" rx="12"></rect>
+                                        <text id="9:00am---10:15am" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="12" fill="#494A50">
+                                            <tspan x="12" y="56">8:30am - 9:45am</tspan>
+                                        </text>
+                                        <text id="Practice" font-family="Poppins-Regular, Poppins" font-size="20" font-weight="normal" line-spacing="16" fill="#494A50">
+                                            <tspan x="12" y="39">Begin</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                            <text id="Saturday" font-family="Poppins-Regular, Poppins" font-size="24" font-weight="normal" fill="#494A50">
+                                <tspan x="26" y="25.5">Saturday</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <path d="M0.5,82.5 L1440.5,82.5" id="header-border" stroke-opacity="0.6" stroke="#AEA0C0" stroke-linecap="square"></path>
+                    <path d="M0,0.5 L1440,0.5" id="top-border" stroke-opacity="0.6" stroke="#AEA0C0" stroke-linecap="square"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
