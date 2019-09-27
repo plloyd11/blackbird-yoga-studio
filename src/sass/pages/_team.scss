@@ -32,7 +32,7 @@
         grid-gap: 25px;
         grid-template-columns: 1fr 1fr;
 
-        @include mq (small) {
+        @include mq(small) {
             grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
         }
     }
@@ -53,7 +53,7 @@
             align-items: center;
             width: 100%;
             color: #fff;
-            background: hsla(191, 55%, 53%, .8);
+            background: #c8b0e5;
             cursor: pointer;
 
             @include mq(small) {

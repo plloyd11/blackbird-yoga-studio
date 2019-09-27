@@ -3,8 +3,8 @@
     <div class="columns">
       <div class="column">
         <div class="global--footer-social">
-          <a href="/"><img src="/img/logo/logo-white.svg"></a>
-          <div class="global--footer-social-icons">
+          <a href="/"><img src="/img/logo/logo-white.svg" width="215"></a>
+          <div class="global--footer-social-icons is-flex">
             <a href="https://www.facebook.com/blackbirdyogahaworth/" target="_blank"><img src="/img/logo/fb.svg"
                 class="social-icon"></a>
             <a href="https://twitter.com/@blackbirdyoga" target="_blank"><img src="/img/logo/twitter.svg"
@@ -14,7 +14,7 @@
           </div>
         </div>
       </div>
-      <div class="column">
+      <div class="column is-offset-8">
         <div class="global--footer-address">
           <p>167 Terrace Street</p>
           <p>Haworth, NJ 07641</p>
@@ -23,5 +23,5 @@
       </div>
     </div>
   </div>
-  <small>&copy; Copyright 2018, Blackbird Yoga Studio</small>
+  <small class="is-centered is-block">&copy; Copyright 2019, Blackbird Yoga Studio</small>
 </footer>

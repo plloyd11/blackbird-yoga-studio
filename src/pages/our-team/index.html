@@ -1,17 +1,17 @@
 ---
 title: Blackbird Yoga Studio | Meet Our Team
 description: Blackbird Yoga Studio, a Yoga Studio located in Haworth New Jersey. Nicole D'Andrea - director.
-layout: default.hbt
+layout: article-vue.hbt
 ---
 
 <main class="team content-page">
   <section class="article-intro section-spacing">
     <h1>Meet your instructors</h1>
     <h3>Our Studio</h3>
-    <img src="/img/team-hero-mobile.jpg" srcset="/img/team-hero.jpg 1200w" alt="Meet Our Team" class="img-responsive">
+    <img src="/img/team/hero.jpg" alt="Meet Our Team" class="img-responsive">
   </section>
   <section class="team--intro">
-    <div class="wrapper section-spacing txt-center">
+    <div class="container section txt-center">
       <p>“Blackbird Yoga Studio has provided me with a place to go to clear my head, move and find my center. The
         teachers are talented, non-judgemental and accepting - always helping students reach their full potential, both
         physically and mentally. Blackbird is one of my favorite places to go and I feel grateful to have stumbled upon
@@ -22,7 +22,7 @@ layout: default.hbt
   <section class="team--callout">
     <h2>Our Team<h2>
   </section>
-  <section class="team--members wrapper section-spacing">
+  <section class="team--members container section">
     <div class="team--individual">
       <div class="team--individual-img">
         <img src="/img/team/nicole.jpg" class="team-image" alt="Nicole D'Andrea" data-name="nicole" />
@@ -357,7 +357,37 @@ layout: default.hbt
         </div>
       </div>
     </div>
+    <div class="team--individual">
+      <div class="team--individual-img">
+        <img src="/img/team/melissa.jpg" class="team-image" alt="Melissa Hanna" data-name="melissa" />
+        <div id="melissa">
+          <div id="show-modal" @click="showModal = true" class="team--individual-name">
+            <h3>Melissa Hanna</h3>
+            <a>Learn More</a>
+          </div>
+          <!-- use the modal component, pass in the prop -->
+          <modal v-if="showModal" @close="showModal = false">
+            <div slot="body" class="modal-content">
+              <div class="modal-content_img">
+                <img src="/img/team/melissa-modal.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="modal-content_text">
+                <h2>Melissa Hanna</h2>
+                <p>As a practicing psychotherapist for many years, Dana has always drawn upon physical activity to stay
+                  healthy and maintain positive energy. Years ago she accidentally walked into a yoga class in a gym which changed
+                  the course of her life. Unable to do many of the poses in class due to stiff joints from years of long distance
+                  running, she returned to class each week upon the gentle encouragement of the instructor. In yoga, Dana found
+                  the blend of physical, emotional, intellectual and spiritual liberation which no other activity had provided
+                  before. </p>
+                <p>Dana is a certified yoga instructor at the 200-hour level and is working towards her 500-hour
+                  certification. Her teaching style reflects her love of the devotional and meditative aspects of yoga while providing a
+                  light-hearted environment to grow and explore. "For all of my teachers and to the Great Teacher within...I am truly
+                  thankful."</p>
+              </div>
+            </div>
+          </modal>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
-
-

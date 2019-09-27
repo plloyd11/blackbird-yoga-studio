@@ -60,3 +60,21 @@
         text-decoration: none;
     }
 }
+
+.btn-cta {
+    padding: 12px 48px;
+    background: #8154ef;
+    display: inline-block;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    font-family: Nunito-SemiBold;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    &:hover {
+        color: #fff;
+        background: darken($primary-color, 15%);
+        text-decoration: none;
+    }
+}

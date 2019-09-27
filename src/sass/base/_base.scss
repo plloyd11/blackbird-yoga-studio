@@ -29,7 +29,7 @@ main {
     padding-left: 1em;
     padding-right: 1em;
     @include mq(medium) {
-        padding-top: 2em;
+        padding-top: 4em;
         padding-left: 0;
         padding-right: 0;
     }
@@ -48,7 +48,7 @@ main {
 // Basic styles for links
 
 a {
-    color: #46b1c9;
+    color: $primary-color;
     text-decoration: none;
     @include on-event {
         color: $text-color;
@@ -62,11 +62,6 @@ optgroup,
 select,
 textarea {
     font: normal 125% / 1.4 $bodyFont;
-}
-
-section > * {
-    margin-left: 0.66667em;
-    margin-right: 0.66667em;
 }
 
 .wrapper-wide {
