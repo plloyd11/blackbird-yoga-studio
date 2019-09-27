@@ -73,6 +73,7 @@
     color: #ffffff;
     letter-spacing: 0;
     text-align: center;
+    transition: 0.25s ease-in-out;
     &:hover {
         color: #fff;
         background: darken($primary-color, 15%);

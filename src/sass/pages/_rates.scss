@@ -6,7 +6,7 @@
     }
 
     &--intro {
-        >div {
+        > div {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -14,7 +14,7 @@
             -ms-flex-align: center;
             align-items: center;
 
-            >div {
+            > div {
                 -webkit-box-flex: 1;
                 -ms-flex: 1;
                 flex: 1;
@@ -28,8 +28,6 @@
     }
 
     &--category {
-        padding: 7em calc(50% - 480px) 8em;
-
         &_grid {
             display: flex;
             flex-direction: column;
@@ -37,14 +35,11 @@
 
             @include mq(small) {
                 display: grid;
-                grid-gap: 20px;
-                grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+                gap: 24px;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             }
             .pricing-card {
                 max-width: 300px;
-                @include mq(small) {
-                    max-width: initial;
-                }
             }
             .pricing-card_bottom {
                 height: initial;
@@ -53,9 +48,5 @@
                 }
             }
         }
-    }
-
-    .wrapper-wide {
-        padding: 7em calc(50% - 600px) 8em;
     }
 }

@@ -1,0 +1,54 @@
+.class-description {
+    max-width: 591px;
+    &--title {
+        margin-bottom: 18px;
+        display: flex;
+        align-items: center;
+        h4 {
+            margin-bottom: 0;
+            font-size: 28px;
+            font-family: $bodyFont;
+        }
+        img {
+            margin-left: 14px;
+        }
+    }
+    &--text {
+    }
+}
+
+.classes-imgBG-1 {
+    background: url('/img/classes/classes-1.jpg') no-repeat left;
+    background-size: auto;
+    background-size: 45%;
+    padding-top: 8.5em;
+}
+
+.classes-imgBG-2 {
+    background: url('/img/classes/classes-2.jpg') no-repeat right;
+    background-size: auto;
+    background-size: 45%;
+    padding-top: 8.5em;
+}
+
+.classes-callout {
+    height: 450px;
+    background: url('/img/classes/callout.jpg') no-repeat left;
+    background-size: auto;
+    background-size: 51%;
+    background-color: $secondary-color;
+    .column {
+        height: 450px;
+        padding: 0;
+    }
+    &_testimony {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            max-width: 489px;
+        }
+    }
+}
