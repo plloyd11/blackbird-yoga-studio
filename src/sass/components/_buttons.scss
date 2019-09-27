@@ -67,7 +67,8 @@
     display: inline-block;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
     border-radius: 8px;
-    font-family: Nunito-SemiBold;
+    font-family: $bodyFont;
+    font-weight: 600;
     font-size: 18px;
     color: #ffffff;
     letter-spacing: 0;
