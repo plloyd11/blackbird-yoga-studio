@@ -1,7 +1,4 @@
 .cd-faq {
-    width: 90%;
-    max-width: 1024px;
-    margin: 2em auto;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 
     ul {
@@ -22,14 +19,13 @@
 }
 
 .cd-faq:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
 }
 @media only screen and (min-width: 768px) {
     .cd-faq {
         position: relative;
-        margin: 4em auto;
         box-shadow: none;
     }
 }

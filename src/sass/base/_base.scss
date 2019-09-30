@@ -89,6 +89,7 @@ img {
 }
 
 .article-intro {
+    margin-bottom: 24px;
     padding: 7em calc(50% - 600px) 0;
     text-align: center;
     @include mq(small) {
@@ -122,4 +123,12 @@ img {
 .is-max-width {
     max-width: 728px;
     margin: 0 auto;
+}
+
+.is-constrained {
+    max-width: 728px;
+}
+
+.is-not-underlined {
+    text-decoration: none !important;
 }

@@ -20,11 +20,19 @@
         <button class="nav-cta mobile-menu-btn">Menu</button>
     </nav>
 </header>
-<aside class="alert-banner">
+<aside class="alert-banner is-hidden-touch">
     <div class="container">
         <img src="/img/icons/confident.svg" alt="">
         <p>Are you ready to rid yourself of stress and find joy in your body? Schedule a free consultation with a
             studio expert.</p>
         <a href="/inspired-practice-planning">Learn more</a>
+    </div>
+</aside>
+<aside class="alert-banner is-hidden-desktop">
+    <div class="container">
+        <a href="/inspired-practice-planning" class="is-not-underlined">
+            <p>Are you ready to rid yourself of stress and find joy in your body? Schedule a free consultation with a
+                studio expert.</p>
+        </a>
     </div>
 </aside>
