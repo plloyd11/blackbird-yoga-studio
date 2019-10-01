@@ -13,42 +13,71 @@
             margin-left: 14px;
         }
     }
-    &--text {
-    }
 }
 
 .classes-imgBG-1 {
-    background: url('/img/classes/classes-1.jpg') no-repeat left;
-    background-size: auto;
-    background-size: 45%;
-    padding-top: 8.5em;
+    @include mq(medium) {
+        background: url('/img/classes/classes-1.jpg') no-repeat left;
+        background-position-y: 25px;
+        background-size: auto;
+        background-size: 45%;
+        padding-top: 9.5em;
+        padding-bottom: 10.25em;
+    }
 }
 
 .classes-imgBG-2 {
-    background: url('/img/classes/classes-2.jpg') no-repeat right;
-    background-size: auto;
-    background-size: 45%;
-    padding-top: 8.5em;
+    @include mq(medium) {
+        background: url('/img/classes/classes-2.jpg') no-repeat right;
+        background-size: auto;
+        background-size: 45%;
+        padding-top: 6em;
+        padding-bottom: 7.5em;
+    }
 }
 
 .classes-callout {
-    height: 450px;
-    background: url('/img/classes/callout.jpg') no-repeat left;
-    background-size: auto;
-    background-size: 51%;
-    background-color: $secondary-color;
+    @include mq(medium) {
+        margin-top: 6.5em;
+    }
     .column {
-        height: 450px;
-        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        @include mq(medium) {
+            height: 450px;
+            padding: 0;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 0;
+            @include mq(medium) {
+                border-radius: 12px 0 0 48px;
+                box-shadow: 0 8px 38px 5px rgba(0, 0, 0, 0.1), 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+            }
+        }
     }
     &_testimony {
+        padding: 2em;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: $secondary-color;
+        @include mq(medium) {
+            padding: inherit;
+            border-radius: 0 48px 12px 0;
+            box-shadow: 0 8px 38px 5px rgba(0, 0, 0, 0.1), 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+        }
         p {
+            text-align: center;
             max-width: 489px;
+            &:last-of-type {
+                margin-top: 12px;
+                margin-bottom: 24px;
+            }
         }
     }
 }

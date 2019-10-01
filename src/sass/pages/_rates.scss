@@ -21,7 +21,7 @@
 
                 img {
                     margin: 0 auto;
-                    max-width: 478px;
+                    width: 478px;
                 }
             }
         }
@@ -45,6 +45,9 @@
                 height: initial;
                 @include mq(small) {
                     height: 275px;
+                }
+                .btn-cta {
+                    margin-top: 12px;
                 }
             }
         }

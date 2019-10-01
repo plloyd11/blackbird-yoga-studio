@@ -32,11 +32,14 @@
     }
 
     &-item {
+        padding-bottom: 0.65em;
         padding-left: 0.65em;
         padding-right: 0.65em;
         color: #333e48;
         font-size: 1.15rem;
         font-weight: 600;
+        @include mq(small) {
+        }
 
         &:hover {
             color: #a0a4b8;

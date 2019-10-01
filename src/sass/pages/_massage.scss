@@ -1,7 +1,9 @@
 .massage {
     &--intro {
-        background: url(/img/massage/intro-img.jpg) no-repeat center;
-        background-size: cover;
+        @include mq(small) {
+            background: url('/img/massage/intro-img.jpg') no-repeat center;
+            background-size: cover;
+        }
         > div {
             p {
                 max-width: 578px;
@@ -10,7 +12,7 @@
     }
     &--services {
         &_item {
-            margin-bottom: 75px;
+            margin-bottom: 64px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -25,20 +27,17 @@
             &_text {
                 max-width: 475px;
                 flex: 1;
-                text-align: center;
-
-                @include mq(medium) {
-                    text-align: left;
-                }
             }
 
             &_img {
+                margin-top: 18px;
                 max-width: 578px;
                 flex: 2;
                 order: 2;
 
                 @include mq(medium) {
                     order: initial;
+                    margin-top: 0;
                 }
             }
         }
