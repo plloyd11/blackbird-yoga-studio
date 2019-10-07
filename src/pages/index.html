@@ -6,9 +6,9 @@ layout: home.hbt
 
 <main class="homepage">
     <!-- Hero -->
-    <section class="homepage--hero">
+    <section class="homepage--hero section">
         <div class="homepage--hero-content">
-            <h1>Practice yoga <br />just as you are</h1>
+            <h1 class="homepage--header">Practice yoga <br class="is-hidden-touch" />just as you are</h1>
             <p>
                 Recharge and restore at our inclusive center in Bergen County, NJ. We help women of every shape and size
                 tame anxiety, release tension and find joy in their bodies so they can banish stress, age gracefully and
@@ -17,42 +17,48 @@ layout: home.hbt
             <a href="/rates" class="btn-cta">New client? Click here</a>
         </div>
         <div class="homepage--hero-img">
-            <img src="/img/homepage/hero.png" alt="Students in a begin yoga class" class="img-responsive" />
+            <img
+                src="/img/homepage/hero.png"
+                alt="Students in a begin yoga class"
+                class="img-responsive is-hidden-touch"
+            />
+            <img
+                src="/img/homepage/hero-mobile.jpg"
+                alt="Students in a begin yoga class"
+                class="img-responsive has-margin-top-lg is-hidden-desktop"
+            />
         </div>
     </section>
-    <!-- A wee at blackbird -->
-    <section class="container section">
-        <h2 class="title is-centered">A week at Blackbird</h2>
+    <!-- A week at blackbird -->
+    <section class="container section has-margin-bottom-lg">
+        <h2 class="homepage--header is-centered">A week at Blackbird</h2>
         <img src="/img/homepage/calendar.svg" alt="" />
     </section>
     <!-- New Clients -->
     <section class="homepage--clients">
-        <div class="container">
-            <div class="columns">
-                <div class="column homepage--clients_pricing-1">
-                    <div class="homepage--clients_pricing-wrapper">
-                        <h3>$99</h3>
-                        <h2>Yoga &amp; Massage</h2>
-                        <p>
-                            All that Blackbird has to offer: 30 days of unlimited yoga plus a 60 minute customized
-                            massage.
-                        </p>
-                        <a href="#" class="btn-cta">Buy Now</a>
-                    </div>
+        <h2 class="homepage--header is-centered">New Clients</h2>
+        <div class="homepage--clients-wrapper">
+            <div class=" homepage--clients_pricing-1">
+                <div class="homepage--clients_pricing-wrapper">
+                    <h3>$99</h3>
+                    <h2>Yoga &amp; Massage</h2>
+                    <p>
+                        All that Blackbird has to offer: 30 days of unlimited yoga plus a 60 minute customized massage.
+                    </p>
+                    <a href="#" class="btn-cta">Buy Now</a>
                 </div>
-                <div class="column">
-                    <img src="/img/homepage/feather.svg" alt="" />
-                </div>
-                <div class="column homepage--clients_pricing-2 ">
-                    <div class="homepage--clients_pricing-wrapper">
-                        <h3>$55</h3>
-                        <h2>Yoga Only</h2>
-                        <p>
-                            21 days of unlimited yoga classes. Try all of our levels and teachers to find the perfect
-                            fit.
-                        </p>
-                        <a href="#" class="btn-cta">Buy Now</a>
-                    </div>
+            </div>
+            <div class="homepage--clients-feather is-v">
+                <img src="/img/homepage/feather.svg" alt="Blackbird Feather" />
+            </div>
+            <div class="homepage--clients_pricing-2 ">
+                <div class="homepage--clients_pricing-wrapper">
+                    <h3>$55</h3>
+                    <h2>Yoga Only</h2>
+                    <p>
+                        21 days of unlimited yoga classes. Try all of our levels and teachers to find the perfect fit.
+                    </p>
+                    <a href="#" class="btn-cta">Buy Now</a>
                 </div>
             </div>
         </div>
@@ -60,7 +66,7 @@ layout: home.hbt
     <!-- Class Callouts -->
     <section class="homepage--begin">
         <div class="homepage--begin-content">
-            <h2>
+            <h2 class="homepage--header">
                 New to yoga? <br />
                 Start with our Begin class.
             </h2>
@@ -80,7 +86,7 @@ layout: home.hbt
             <img src="/img/homepage/massage.jpg" alt="" />
         </div>
         <div class="homepage--massage-content">
-            <h2>Blackbird Massage</h2>
+            <h2 class="homepage--header">Blackbird Massage</h2>
             <p>
                 Self care takes many forms. Therapeutic touch and customized bodywork have endless benefits from
                 decreased stress and anxiety to improved range of motion and decreased pain. Massage is the perfect
@@ -90,8 +96,8 @@ layout: home.hbt
         </div>
     </section>
     <!-- People are saying -->
-    <section class="homepage--callout">
-        <h2>People are saying</h2>
+    <section class="homepage--callout has-margin-top-xl">
+        <h2 class="homepage--header is-centered">People are saying</h2>
         <div class="homepage--callout-container">
             <div class="container">
                 <div class="columns">

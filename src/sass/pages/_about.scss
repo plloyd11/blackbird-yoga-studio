@@ -3,6 +3,11 @@
         @include hero-img(url('/img/about-hero.jpg'));
     }
 
+    &--intro-img {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
     &--callout {
         width: 100%;
         padding: 2.25em 0.75em;

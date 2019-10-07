@@ -16,11 +16,59 @@
         margin-bottom: 36px;
     }
 
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include mq(small) {
+            height: 535px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: initial;
+        }
+    }
+
+    &-feather {
+        img {
+            display: none;
+            @include mq(small) {
+                display: block;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+
     &_pricing-1 {
-        background: url('/img/homepage/yoga-massage.svg') no-repeat center center;
+        padding: 2em 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #f7cccb;
+        @media (min-width: 768px) {
+            width: 40%;
+            background: url('/img/homepage/yoga-massage.svg') no-repeat left;
+            background-size: contain;
+        }
+        @media (min-width: 1400px) {
+            width: 35%;
+        }
     }
     &_pricing-2 {
-        background: url('/img/homepage/yoga.svg') no-repeat center center;
+        padding: 2em 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #c8b0e5;
+        @media (min-width: 768px) {
+            width: 40%;
+            background: url('/img/homepage/yoga.svg') no-repeat right;
+            background-size: contain;
+        }
+        @media (min-width: 1400px) {
+            width: 35%;
+        }
     }
 
     &_pricing-wrapper {
