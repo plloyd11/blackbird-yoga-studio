@@ -3,7 +3,7 @@
     margin-top: 36px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     @include mq(small) {
         padding: 3rem 0 3rem 1.5rem;

@@ -53,5 +53,25 @@
                 }
             }
         }
+        .grid-special {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include mq(small) {
+                display: grid;
+                gap: 24px;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+            @media (min-width: 1200px) {
+                display: grid;
+                gap: 24px;
+                grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            }
+            @media (min-width: 1408px) {
+                display: grid;
+                gap: 24px;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
     }
 }
