@@ -18,6 +18,9 @@
         align-items: center;
         background: url('/img/team/team-callout.jpg') no-repeat center center;
         background-size: cover;
+        @include mq(small) {
+            height: 700px;
+        }
 
         h2 {
             color: #fff;

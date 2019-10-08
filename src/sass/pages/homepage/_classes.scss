@@ -7,7 +7,6 @@
     align-items: center;
     @include mq(small) {
         padding: initial;
-        margin-top: 96px;
         display: grid;
         grid-template-columns: minmax(640px, 1fr) 2fr;
     }
