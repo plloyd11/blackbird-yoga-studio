@@ -40,9 +40,8 @@
         }
 
         a {
-            width: 235px;
             margin: 0 auto;
-            display: block;
+            display: table;
             @include mq(medium) {
                 width: inherit;
                 display: inline-block;

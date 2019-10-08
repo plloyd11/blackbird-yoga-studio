@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     @include mq(small) {
-        margin-top: 96px;
         display: grid;
         gap: 48px;
         grid-template-columns: minmax(560px, 1fr) 2fr;

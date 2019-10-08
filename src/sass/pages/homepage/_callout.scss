@@ -1,6 +1,8 @@
 .homepage--callout {
+    margin-top: 18px;
     padding: 3rem 1.5rem;
     @include mq(small) {
+        margin-top: 96px;
         padding: initial;
     }
     &-container {

@@ -9,13 +9,26 @@
         padding: initial;
         margin-top: 96px;
         display: grid;
-        gap: 48px;
-        grid-template-columns: minmax(560px, 1fr) 2fr;
+        grid-template-columns: minmax(640px, 1fr) 2fr;
     }
     &-content {
+        order: 2;
         @include mq(small) {
-            padding-left: calc(50% - 14em);
+            order: 1;
+            padding-left: calc(50% - 12em);
             align-self: center;
+        }
+    }
+    &-img {
+        order: 1;
+        @include mq(small) {
+            order: 2;
+        }
+        img {
+            &:nth-child(1) {
+                max-width: 85%;
+                float: right;
+            }
         }
     }
     p {
@@ -25,22 +38,27 @@
 
 .homepage--massage {
     padding: 3rem 1.5rem;
-    margin-top: 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     @include mq(small) {
         padding: initial;
-        margin-top: 96px;
         display: grid;
-        gap: 48px;
-        grid-template-columns: 2fr minmax(560px, 1fr);
+        grid-template-columns: 2fr minmax(640px, 1fr);
     }
     &-content {
         @include mq(small) {
-            padding-right: calc(50% - 14em);
+            padding-right: calc(50% - 12em);
             align-self: center;
+        }
+    }
+    &-img {
+        img {
+            &:nth-child(1) {
+                max-width: 80%;
+                float: left;
+            }
         }
     }
     p {
