@@ -1,22 +1,16 @@
 // This file contains all application-wide Sass variables.
 
 // Colors
-$primary-color: #46b1c9;
-$secondary-color: #6d4dc6;
-$primary-pink: #f8b6b4;
+$primary-color: #8154ef;
+$secondary-color: #f7cccb;
+$tertiary-color: #c8b0e5;
 $bg-dark-gray: #42474c;
-$primary-gradient: linear-gradient(to bottom, #a8c0ff, #6d4dc6);
-
-// Layout
-$section-spacing: 0 0.66667em;
+$primary-gradient: linear-gradient(to bottom, $tertiary-color, $primary-color);
 
 // Regular font family
-// @type List
-$text-font-stack: 'Montserrat', sans-serif;
 
-// Code (monospace) font family
-// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$headerFont: 'Poppins', sans-serif;
+$bodyFont: 'Nunito', sans-serif;
 
 // Copy text color
 // @type Color

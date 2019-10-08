@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+{{> head }}
+
+<body>
+
+  {{> global-nav }}
+
+  {{{ contents }}}
+
+  {{> global-footer }}
+
+  {{> modal }}
+
+  {{> vue }}
+
+  {{> scripts }}
+
+</body>
+
+</html>

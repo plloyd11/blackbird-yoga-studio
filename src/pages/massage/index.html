@@ -1,23 +1,18 @@
 ---
 title: Blackbird Yoga Studio | Massage Services
 description: Blackbird Yoga Studio, a Yoga Studio located in Haworth New Jersey. Nicole D'Andrea - director.
-layout: default.hbt
+layout: article-vue.hbt
 ---
 
 <main class="team content-page">
     <section class="article-intro">
         <h1>Massage Services</h1>
         <h3>Your body is in good hands</h3>
-        <img
-            src="/img/massage/massage-hero.jpg"
-            srcset="/img/massage/massage-hero.jpg 1200w"
-            alt="Massage"
-            class="img-responsive"
-        />
+        <img src="/img/massage/hero.jpg" alt="Massage" class="img-responsive" />
     </section>
-    <section class="massage--intro">
-        <div class="wrapper-wide section-spacing">
-            <p class="">
+    <section class="massage--intro section">
+        <div class="container">
+            <p class="has-margin-bottom-md">
                 Self care takes many forms. Therapeutic touch and customized bodywork have endless benefits from
                 decreased stress and anxiety to improved range of motion and decreased pain. Massage is the perfect
                 compliment to any yoga practice.
@@ -30,7 +25,7 @@ layout: default.hbt
             </p>
         </div>
     </section>
-    <section class="massage--services">
+    <section class="massage--services section">
         <div class="wrapper-wide section-spacing">
             <div class="massage--services_item">
                 <div class="massage--services_item_text">
@@ -139,7 +134,7 @@ layout: default.hbt
             </div>
         </div>
     </section>
-    <section class="massage--teachers wrapper section-spacing">
+    <section class="massage--teachers container section-spacing">
         <h2 class="txt-center is-size-3 mb25">Our Massage Therapists</h2>
         <div class="massage--teachers_wrapper">
             <div class="massage--individual">
@@ -152,11 +147,11 @@ layout: default.hbt
                         </div>
                         <!-- use the modal component, pass in the prop -->
                         <modal v-if="showModal" @close="showModal = false">
-                            <div slot="body" class="modal-content">
-                                <div class="modal-content_img">
+                            <div slot="body" class="modal-body-content">
+                                <div class="modal-body-content_img">
                                     <img src="/img/massage/brandi-modal.jpg" alt="" class="img-responsive" />
                                 </div>
-                                <div class="modal-content_text">
+                                <div class="modal-body-content_text">
                                     <h2>Brandi O’Rourke</h2>
                                     <p>
                                         Brandi is a Licensed Massage Therapist and Reiki Master with over 13 years’
@@ -195,11 +190,11 @@ layout: default.hbt
                         </div>
                         <!-- use the modal component, pass in the prop -->
                         <modal v-if="showModal" @close="showModal = false">
-                            <div slot="body" class="modal-content">
-                                <div class="modal-content_img">
+                            <div slot="body" class="modal-body-content">
+                                <div class="modal-body-content_img">
                                     <img src="/img/massage/victoria-modal.jpg" alt="" class="img-responsive" />
                                 </div>
-                                <div class="modal-content_text">
+                                <div class="modal-body-content_text">
                                     <h2>Victoria Thomas</h2>
                                     <p>
                                         Victoria received her certification and NJ license in Massage and Bodywork
@@ -238,11 +233,11 @@ layout: default.hbt
                         </div>
                         <!-- use the modal component, pass in the prop -->
                         <modal v-if="showModal" @close="showModal = false">
-                            <div slot="body" class="modal-content">
-                                <div class="modal-content_img">
+                            <div slot="body" class="modal-body-content">
+                                <div class="modal-body-content_img">
                                     <img src="/img/massage/veronica-modal.jpg" alt="" class="img-responsive" />
                                 </div>
-                                <div class="modal-content_text">
+                                <div class="modal-body-content_text">
                                     <h2>Veronica Busciglio</h2>
                                     <p>
                                         Veronica Busciglio is a Registered Nurse and Certified Massage Therapist (550
@@ -276,7 +271,7 @@ layout: default.hbt
         <h3 class="txt-center">A special gift for first time massage clients</h3>
         <h2 class="txt-center">60 minute massage for only $60</h2>
         <p class="txt-center">(Use code FIRSTMASSAGE at checkout)</p>
-        <div class="global--btn-purchase btn btn-cta">
+        <div class="btn-cta has-margin-top-md">
             <script src="https://widgets.healcode.com/javascripts/healcode.js" type="text/javascript"></script>
             <healcode-widget
                 data-version="0.2"

@@ -1,10 +1,10 @@
 .massage {
     &--intro {
-        background: url(/img/massage/intro-img.jpg) no-repeat center;
-        background-size: cover;
+        @include mq(small) {
+            background: url('/img/massage/intro-img.jpg') no-repeat center;
+            background-size: cover;
+        }
         > div {
-            padding-top: 80px;
-            padding-bottom: 80px;
             p {
                 max-width: 578px;
             }
@@ -12,13 +12,13 @@
     }
     &--services {
         &_item {
-            margin-bottom: 75px;
+            margin-bottom: 64px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
 
-            @include mq (medium) {
+            @include mq(medium) {
                 margin-bottom: 125px;
                 flex-direction: row;
                 align-items: flex-start;
@@ -27,20 +27,17 @@
             &_text {
                 max-width: 475px;
                 flex: 1;
-                text-align: center;
-
-                @include mq(medium) {
-                    text-align: left;
-                }
             }
 
             &_img {
+                margin-top: 18px;
                 max-width: 578px;
                 flex: 2;
                 order: 2;
 
-                @include mq (medium) {
+                @include mq(medium) {
                     order: initial;
+                    margin-top: 0;
                 }
             }
         }
@@ -56,7 +53,7 @@
             display: flex;
             flex-direction: column;
 
-            @include mq (medium) {
+            @include mq(medium) {
                 flex-direction: row;
             }
         }
@@ -99,7 +96,7 @@
             .pricing-card {
                 max-width: 300px;
 
-                @include mq (small) {
+                @include mq(small) {
                     max-width: initial;
                 }
             }
@@ -114,10 +111,10 @@
             flex-direction: column;
             align-items: center;
 
-            @include mq (small) {
+            @include mq(small) {
                 display: grid;
                 grid-gap: 20px;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
             }
         }
     }
@@ -138,7 +135,7 @@
             font-weight: 400;
             line-height: 1.25;
 
-            @include mq (small) {
+            @include mq(small) {
                 font-size: 1.85rem;
             }
         }
@@ -149,7 +146,7 @@
             font-weight: 400;
             line-height: 1.25;
 
-            @include mq (small) {
+            @include mq(small) {
                 margin-bottom: 7.5px;
                 font-size: 2.15rem;
             }
@@ -160,7 +157,7 @@
         margin: 0;
         margin-bottom: 1.5em;
 
-        @include mq (small) {
+        @include mq(small) {
             margin-bottom: initial;
         }
 
@@ -177,7 +174,7 @@
             align-items: center;
             width: 100%;
             color: #fff;
-            background: hsla(191, 55%, 53%, .8);
+            background: hsla(191, 55%, 53%, 0.8);
             cursor: pointer;
 
             @include mq(small) {

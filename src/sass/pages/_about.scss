@@ -3,6 +3,11 @@
         @include hero-img(url('/img/about-hero.jpg'));
     }
 
+    &--intro-img {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
     &--callout {
         width: 100%;
         padding: 2.25em 0.75em;
@@ -88,4 +93,9 @@
     padding: 1em;
     overflow-y: scroll;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.about-callout {
+    width: 925px;
+    margin: 0 auto;
 }

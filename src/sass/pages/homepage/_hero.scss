@@ -1,14 +1,36 @@
-.homepage--hero-section {
-    @include hero-img(url('/img/hero.jpg'));
-
+.homepage--hero {
+    padding: 3rem 1.5rem;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include mq(small) {
+        padding: 3rem 0 3rem 1.5rem;
+        display: grid;
+        gap: 48px;
+        grid-template-columns: minmax(560px, 1fr) 2fr;
+    }
     &-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 50px;
+        padding-left: calc(50% - 12em);
+        align-self: center;
+    }
+    p {
+        margin-bottom: 24px;
+        @include mq(small) {
+            margin-bottom: 48px;
         }
+    }
+}
+
+.homepage--header {
+    margin-bottom: 18px;
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 500;
+    color: #494a50;
+    @include mq(small) {
+        margin-bottom: 24px;
+        font-size: 38px;
     }
 }

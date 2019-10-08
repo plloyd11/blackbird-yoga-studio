@@ -1,20 +1,22 @@
-<footer class="global--footer">
+<footer class="global--footer section">
   <div class="container">
-    <div class="global--footer-wrapper">
-      <div class="global--footer-address">
-        <p>167 Terrace Street</p>
-        <p>Haworth, NJ 07641</p>
-        <p>(201) 338-4876</p>
-        <small>&copy; Copyright 2018, Blackbird Yoga Studio</small>
-      </div>
-      <div class="global--footer-social">
-        <a href="/"><img src="/img/logo/logo-white.svg"></a>
-        <div class="global--footer-social-icons">
-          <a href="https://www.facebook.com/blackbirdyogahaworth/" target="_blank"><img src="/img/logo/fb.svg" class="social-icon"></a>
-          <a href="https://twitter.com/@blackbirdyoga" target="_blank"><img src="/img/logo/twitter.svg" class="social-icon"></a>
-          <a href="https://www.instagram.com/blackbird_yoga_studio/" target="_blank"><img src="/img/logo/ig.svg" class="social-icon"></a>
-        </div>
+    <div class="global--footer-social">
+      <a href="/"><img src="/img/logo/logo-white.svg" width="215"></a>
+      <div class="global--footer-social-icons is-flex">
+
+        <a href="https://www.facebook.com/blackbirdyogahaworth/" target="_blank"><img src="/img/logo/fb.svg"
+            class="social-icon"></a>
+        <a href="https://twitter.com/@blackbirdyoga" target="_blank"><img src="/img/logo/twitter.svg"
+            class="social-icon"></a>
+        <a href="https://www.instagram.com/blackbird_yoga_studio/" target="_blank"><img src="/img/logo/ig.svg"
+            class="social-icon"></a>
       </div>
     </div>
+    <div class="global--footer-address">
+      <p>167 Terrace Street</p>
+      <p>Haworth, NJ 07641</p>
+      <p>(201) 338-4876</p>
+    </div>
   </div>
+  <small class="is-centered is-block">&copy; Copyright 2019, Blackbird Yoga Studio</small>
 </footer>

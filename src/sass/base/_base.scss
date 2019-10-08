@@ -26,12 +26,8 @@ main {
 
 .content-page {
     padding-top: 5em;
-    padding-left: 1em;
-    padding-right: 1em;
     @include mq(medium) {
-        padding-top: 2em;
-        padding-left: 0;
-        padding-right: 0;
+        padding-top: 4em;
     }
 }
 /**
@@ -48,7 +44,7 @@ main {
 // Basic styles for links
 
 a {
-    color: #46b1c9;
+    color: $primary-color;
     text-decoration: none;
     @include on-event {
         color: $text-color;
@@ -61,17 +57,7 @@ input,
 optgroup,
 select,
 textarea {
-    font: normal 125% / 1.4 $text-font-stack;
-}
-
-section > * {
-    margin-left: 0.66667em;
-    margin-right: 0.66667em;
-}
-
-.container,
-.wrapper {
-    padding: 0 calc(50% - 480px);
+    font: normal 125% / 1.4 $bodyFont;
 }
 
 .wrapper-wide {
@@ -99,6 +85,7 @@ img {
 }
 
 .article-intro {
+    margin-bottom: 24px;
     padding: 7em calc(50% - 600px) 0;
     text-align: center;
     @include mq(small) {
@@ -127,4 +114,17 @@ img {
     > img {
         margin: 0 auto;
     }
+}
+
+.is-max-width {
+    max-width: 728px;
+    margin: 0 auto;
+}
+
+.is-constrained {
+    max-width: 728px;
+}
+
+.is-not-underlined {
+    text-decoration: none !important;
 }

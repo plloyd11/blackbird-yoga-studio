@@ -1,49 +1,30 @@
 .alert-banner {
     position: absolute;
     max-width: 1680px;
-    top: 90px;
+    top: 100px;
     width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    background-color: #6d4dc6;
-    a {
-        &:hover {
-            text-decoration: none;
-        }
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #ede7fe;
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     p {
-        padding-left: 0.25em;
-        padding-right: 0.25em;
+        margin-left: 12px;
+        margin-right: 18px;
         font-size: 13px;
         text-align: center;
-        color: #fff;
+        color: #272135;
         margin-bottom: 0;
         @include mq(small) {
             font-size: 16px;
         }
     }
-}
-
-.alert-banner--homepage {
-    max-width: 1680px;
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    background-color: #6d4dc6;
     a {
-        &:hover {
-            text-decoration: none;
-        }
-    }
-    p {
-        padding-left: 0.25em;
-        padding-right: 0.25em;
-        font-size: 13px;
-        text-align: center;
-        color: #fff;
-        margin-bottom: 0;
-        @include mq(small) {
-            font-size: 16px;
-        }
+        font-size: 16px;
+        color: #272135;
+        text-decoration: underline;
     }
 }

@@ -4,27 +4,22 @@
     }
 
     &--content {
-        display: flex;
-        flex-direction: column;
-        @include mq(medium) {
-          flex-direction: row;
-        }
-
         > div {
             flex: 1;
-        }
-
-        &-form {
-            padding-right: 5%;
         }
 
         &-info {
             padding: 1.25em;
             border: 1px solid #dedede;
-            background: #F8F8F8;
+            background: #f8f8f8;
             &-directions {
-              margin-top: 1em;
+                margin-top: 1em;
             }
         }
+    }
+    .global--icon-info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="625px" height="567px" viewBox="0 0 625 567" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M315.483221,533.44268 C549.546996,533.44268 488,467 601,467 C714,467 750.5625,396.789063 714.144526,291.539607 C696.082923,239.340826 737.277416,240.843784 766.726562,224 C796.656324,206.881323 815.06553,171.640304 823.574318,145.81178 C849.179562,68.0867715 783.396204,-5.68434189e-14 642.33247,-5.68434189e-14 C408.268695,-5.68434189e-14 0,140.259759 0,275.845665 C0,411.431571 81.4194461,533.44268 315.483221,533.44268 Z" id="path-1"></path>
+        <filter x="-3.3%" y="-4.5%" width="106.5%" height="110.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -2190.000000)" id="new-clients">
+            <g transform="translate(-221.000000, 2041.000000)">
+                <g id="yoga-massage" transform="translate(0.000000, 163.000000)">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#F7CCCB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

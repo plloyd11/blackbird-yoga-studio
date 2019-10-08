@@ -1,32 +1,82 @@
-.homepage--pricing {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    background: $primary-gradient;
-    @include mq (small) {
-        padding-top: 6.5em;
-        padding-bottom: 6.5em;
+.homepage--clients {
+    text-align: center;
+    h3 {
+        font-size: 58px;
+        margin-bottom: 18px;
+        color: #494a50;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    p {
+        margin-bottom: 36px;
     }
 
     &-wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-                align-items: center;
-
-        @include mq (small) {
-            display: grid;
-            grid-gap: 20px;
-            grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include mq(small) {
+            height: 535px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: initial;
         }
     }
 
-    .pricing-card_bottom {
-        height: 250px;
+    &-feather {
+        img {
+            display: none;
+            @include mq(small) {
+                display: block;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &_pricing-1 {
+        padding: 2em 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #f7cccb;
+        @media (min-width: 768px) {
+            width: 40%;
+            background: url('/img/homepage/yoga-massage.svg') no-repeat left;
+            background-size: contain;
+        }
+        @media (min-width: 1400px) {
+            width: 35%;
+        }
+    }
+    &_pricing-2 {
+        padding: 2em 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #c8b0e5;
+        @media (min-width: 768px) {
+            width: 40%;
+            background: url('/img/homepage/yoga.svg') no-repeat right;
+            background-size: contain;
+        }
+        @media (min-width: 1400px) {
+            width: 35%;
+        }
+    }
+
+    &_pricing-wrapper {
+        max-width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }

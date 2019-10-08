@@ -1,31 +1,33 @@
 .homepage--callout {
-    width: 100%;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 18px;
+    padding: 3rem 1.5rem;
+    @include mq(small) {
+        margin-top: 96px;
+        padding: initial;
+    }
+    &-container {
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    @include mq (small) {
-        height: 700px;
-        background: url('/img/studio-meditating.jpg') no-repeat center center;
-        background-size: cover;
+        @include mq(small) {
+            height: 800px;
+            background: url('/img/homepage/testimonial-hero.jpg') no-repeat center center;
+            background-size: cover;
+        }
     }
 
-    .text-wrapper {
-        color: #fff;
-        text-align: left;
-
-        >p {
-            color: #333e48;
-            font-size: 1rem;
-
-            @include mq (small) {
-                padding-right: 16.5em;
-                font-size: 1.15rem;
-                color: #fff;
-                line-height: 1.5;
-                font-weight: 400;
-            }
+    &_widget {
+        max-height: 500px;
+        margin: 2em auto 0;
+        background: #fff;
+        overflow-y: scroll;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        @include mq(small) {
+            margin: initial;
+            max-height: 675px;
         }
     }
 }
