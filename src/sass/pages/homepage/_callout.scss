@@ -31,3 +31,68 @@
         }
     }
 }
+
+
+.popup-box {
+    padding: 1.45em;
+    h2 {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+    p {
+        font-size: 20px;
+    }
+    small {
+        display: block;
+        margin-top: .65em;
+        font-size: 12px;
+    }
+}
+
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:hsl(257, 33%, 43%);
+    display:none;
+  }  
+  #boxes .window {
+    position:absolute;
+    left:0;
+    top:0;
+    max-width: 600px;
+    display:none;
+    z-index:9999;
+    padding:20px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  #boxes #dialog {
+    width:400px; 
+    height:auto;
+    padding:10px;
+    background-color:#ffffff;
+    font-size: 15pt;
+  }
+  .maintext{
+    text-align: center;
+    text-decoration: none;
+  }
+  .agree:hover{
+    background-color: #D1D1D1;
+  }
+  .popupoption:hover{
+      background-color:#D1D1D1;
+      color: green;
+  }
+  .popupoption2:hover{
+      
+      color: red;
+  }
+
+  @media (min-width: 768px) {
+    #boxes #dialog {
+        width:600px; 
+      }
+  }
