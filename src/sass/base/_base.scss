@@ -121,10 +121,20 @@ img {
     margin: 0 auto;
 }
 
+.is-max-width-long {
+    max-width: 850px;
+}
+
 .is-constrained {
     max-width: 728px;
 }
 
 .is-not-underlined {
     text-decoration: none !important;
+}
+
+.container {
+    @media (min-width: 1408px) {
+        max-width: 1200px;
+    }
 }

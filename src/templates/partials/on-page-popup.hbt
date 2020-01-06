@@ -1,0 +1,13 @@
+<aside>
+  <div id="boxes">
+    <div style="top: 199.5px; left: 551.5px; display: none;" id="dialog" class="window">
+      <div class="popup-box">
+        <h2>Does someone you &lt;3 need the gift of R&R?</h2>
+        <p class="has-margin-bottom-md">Blackbird Yoga Studio gift certificates are available <br> in any denomination!</p>
+        <a href="https://clients.mindbodyonline.com/classic/ws?studioid=678217&stype=42" target="_blank" class="btn">Click Here!</a>
+        <small>(click or tap anywhere else on the screen to dismiss!)</small>
+      </div>
+    </div>
+    <div style="width: 1478px; font-size: 32pt; color:white; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
+  </div>
+</aside>
