@@ -53,7 +53,9 @@
         }
         .homepage--clients_pricing-wrapper {
             position: relative;
-            right: 10%;
+            @include mq(small) {
+                right: 10%;
+            }
         }
     }
     &_pricing-2 {
@@ -69,7 +71,9 @@
         }
         .homepage--clients_pricing-wrapper {
             position: relative;
-            left: 10%;
+            @include mq(small) {
+                left: 10%;
+            }
         }
         
     }
