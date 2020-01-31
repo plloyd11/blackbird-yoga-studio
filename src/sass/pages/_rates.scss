@@ -38,7 +38,7 @@
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             }
             .pricing-card {
-                max-width: 300px;
+                max-width: 350px;
             }
             .pricing-card-wide {
                 max-width: 500px;
@@ -58,16 +58,6 @@
             flex-direction: column;
             align-items: center;
             @include mq(small) {
-                display: grid;
-                gap: 24px;
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            }
-            @media (min-width: 1200px) {
-                display: grid;
-                gap: 24px;
-                grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-            }
-            @media (min-width: 1408px) {
                 display: grid;
                 gap: 24px;
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
