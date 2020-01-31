@@ -24,6 +24,10 @@
                 align-items: flex-start;
             }
 
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
             &_text {
                 max-width: 475px;
                 flex: 1;
@@ -47,7 +51,7 @@
         padding: 5em calc(50% - 600px);
         background: #a8c0ff;
         background: -webkit-gradient(linear, left top, left bottom, from(#a8c0ff), to($secondary-color));
-        background: linear-gradient(to bottom, #a8c0ff, $secondary-color);
+        background: linear-gradient(to bottom, hsl(282, 26%, 32%), #8154ef);
 
         &_wrapper {
             display: flex;
