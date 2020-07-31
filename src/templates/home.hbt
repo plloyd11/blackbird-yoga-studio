@@ -11,6 +11,8 @@
 
   {{{ contents }}}
 
+  {{> store-banner }}
+
   {{> global-footer }}
 
   {{> scripts }}

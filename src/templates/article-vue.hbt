@@ -8,6 +8,8 @@
   {{> global-nav }}
 
   {{{ contents }}}
+  
+  {{> store-banner }}
 
   {{> global-footer }}
 

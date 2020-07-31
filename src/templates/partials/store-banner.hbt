@@ -1,0 +1,31 @@
+<div id="store-banner" x-data="{ show: false }" x-show="show" x-init="localStorage.getItem('hideBanner') === null ? (setTimeout(() => show = true, 500)) : (show = false)" x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0 scale-95 translate-y-2" x-transition:enter-end="opacity-100 scale-100 translate-y-0" x-transition:leave="ease-in duration-300" x-transition:leave-start="opacity-100 scale-100 translate-y-0" x-transition:leave-end="opacity-0 scale-95 translate-y-2" class="transition transform fixed z-auto bottom-0 inset-x-0 pb-2 sm:pb-5">
+  <div class="max-w-screen-xl mx-auto px-2 sm:px-4">
+    <div class="p-2 rounded-lg bg-purple-700 shadow-lg sm:p-3">
+      <div class="flex items-center justify-between flex-wrap">
+        <div class="w-0 flex-1 flex items-center">
+          <img class="h-6" src="/img/tailwind-ui-logo-on-dark.svg" alt="">
+          <p class="ml-3 font-medium text-white truncate">
+            <span class="lg:inline text-purple-200">
+              <strong class="text-white font-semibold mr-1">Introducing our new store -</strong>
+              <span class="hidden xl:inline">Shop Blackbird Boutique!</span>
+            </span>
+          </p>
+        </div>
+        <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
+          <div class="rounded-md shadow-sm">
+            <a href="https://www.shopneighborhood.com/shop/r_1rqeevgh/Blackbird-Yoga-Studio" class="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-purple-900 bg-white hover:text-purple-800 focus:outline-none focus:underline">
+              Check Out The Store
+            </a>
+          </div>
+        </div>
+        <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
+          <button @click="localStorage.setItem('hideBanner', true); show = false" type="button" class="-mr-1 flex p-2 rounded-md hover:bg-purple-800 focus:outline-none focus:bg-purple-800">
+            <svg class="h-6 w-6 text-white" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

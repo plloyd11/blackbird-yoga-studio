@@ -9,6 +9,8 @@
 
   {{{ contents }}}
 
+  {{> store-banner }}
+
   {{> global-footer }}
 
   {{> modal }}
