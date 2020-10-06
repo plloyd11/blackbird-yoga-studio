@@ -106,7 +106,7 @@ new Vue({
 });
 
 new Vue({
-    el: '#dana',
+    el: '#michelle',
     data: {
         showModal: false
     }
