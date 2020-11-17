@@ -7,6 +7,7 @@
         <a href="/classes/" class="global--main-nav-item">Classes</a>
         <a href="/massage/" class="global--main-nav-item">Massage</a>
         <a href="/rates/" class="global--main-nav-item">Rates</a>
+        <a href="/studio-news/" class="global--main-nav-item">Studio News</a>
         <div class="has-dropdown is-hoverable global--main-nav-item navbar-item">
             <a class="navbar-link">Who We Are</a>
             <div class="navbar-dropdown">

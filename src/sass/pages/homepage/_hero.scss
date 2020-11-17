@@ -1,24 +1,30 @@
 .homepage--hero {
-    padding: 3rem 1.5rem;
+    padding: 1rem 1.5rem;
     margin-top: 36px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    @include mq(small) {
+    @include mq(medium) {
         padding: 3rem 0 3rem 1.5rem;
         display: grid;
         gap: 48px;
-        grid-template-columns: minmax(560px, 1fr) 2fr;
+        grid-template-columns: minmax(610px, 1fr) 2fr;
     }
     &-content {
         padding-left: calc(50% - 12em);
         align-self: center;
     }
-    p {
-        margin-bottom: 24px;
+    &-img {
+        margin-top: 2rem;
         @include mq(small) {
-            margin-bottom: 48px;
+            margin-bottom: 0;
+        }
+    }
+    p {
+        margin-bottom: 12px;
+        @include mq(small) {
+            margin-bottom: 18px;
         }
     }
 }
