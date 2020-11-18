@@ -6,15 +6,15 @@
           <img class="h-6" src="/img/tailwind-ui-logo-on-dark.svg" alt="">
           <p class="ml-3 font-medium text-white truncate">
             <span class="lg:inline text-purple-200">
-              <strong class="text-white font-semibold mr-1">Introducing Our New Online Store -</strong>
-              <span>Shop Blackbird Boutique!</span>
+              <strong class="text-white font-semibold mr-1">Blackbird 2020 -</strong>
+              <span>Read about what's happening at the studio</span>
             </span>
           </p>
         </div>
         <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
           <div class="rounded-md shadow-sm">
-            <a href="https://www.shopneighborhood.com/shop/r_1rqeevgh/Blackbird-Yoga-Studio" class="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-purple-900 bg-white hover:text-purple-800 focus:outline-none focus:underline">
-              Shop Now 
+            <a href="/studio-news" class="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-purple-900 bg-white hover:text-purple-800 focus:outline-none focus:underline">
+              Studio News
             </a>
           </div>
         </div>

@@ -8,10 +8,10 @@
   {{> global-nav }}
 
   {{{ contents }}}
-  
-  {{> store-banner }}
 
   {{> global-footer }}
+
+  {{> store-banner }}
 
   {{> modal }}
 
