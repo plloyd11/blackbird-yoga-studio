@@ -42,7 +42,7 @@
     "imagemin-jpegoptim": "^5.2.0",
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^5.2.0",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "metalsmith": "^2.2.0",
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-layouts": "^1.6.5",
